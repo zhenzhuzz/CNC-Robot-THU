@@ -40,7 +40,7 @@ Robotic Machining System @Tsinghua: Custom ABB IRB6700 (2.6m reach, 200kg load, 
 
 > 📌 本程序是首个**基于MATLAB调用ABB PC SDK的机器人二次开发控制界面**（传统方案通常使用C#）。  
 > 当前版本成功实现机器人（ABB IRB6700 200/2.6）上下电、指针复位、运行例行程序及启停控制，经真机测试运行稳定可靠。  
-> 经测试发现ABB PC SDK扩展其他功能（如读写变量、编程等）后界面存在明显卡顿，推测为ABB SDK本身性能瓶颈所致，建议其余复杂任务在RobotStudio内完成。
+> 经测试发现加入ABB PC SDK其他功能（如读写变量、编程等）后界面存在明显卡顿，推测为ABB SDK本身性能瓶颈所致，建议编程、变量修改等复杂任务在RobotStudio内完成。
 
 <!-- 软件运行颤振时截图（软件界面） -->
 ![基于MATLAB的机器人上位机控制界面](Media/基于MATLAB的机器人上位机控制界面.png)
