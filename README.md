@@ -47,9 +47,9 @@ Robotic Machining System @Tsinghua: Custom ABB IRB6700 (2.6m reach, 200kg load, 
 
 其他文件夹（如`EXP01`~`EXP09`及`EXPpre`系列）为机器人铣削实验及数据分析代码，非机器人加工方向研究者可忽略。
 
-基于C#的机器人上位机控制软件位于[`ABB_C#上位机_优化卡顿_取消监听_20250318`](Codes/Robotic_Milling_Necessities/PLC_C%23上位机_20250113/ABB_C#上位机_优化卡顿_取消监听_20250318)文件夹，下载整个文件夹，用Visual Studio打开[`ABB_1230.sln`](Codes/Robotic_Milling_Necessities/PLC_C#上位机_20250113/ABB_C#上位机_优化卡顿_取消监听_20250318/20250114/ABB_12301/ABB_1230.sln)即可运行（实际运行容易卡顿或出现bug）。
+基于C#的机器人上位机控制软件位于[`ABB_CSharp上位机_优化卡顿_取消监听_20250318`](Codes/Robotic_Milling_Necessities/PLC_CSharp上位机_20250113/ABB_CSharp上位机_优化卡顿_取消监听_20250318)文件夹，下载整个文件夹，用Visual Studio打开[`ABB_1230.sln`](Codes/Robotic_Milling_Necessities/PLC_CSharp上位机_20250113/ABB_CSharp上位机_优化卡顿_取消监听_20250318/20250114/ABB_12301/ABB_1230.sln)即可运行（实际运行容易卡顿或出现bug）。
 
-整套机器人加工系统的核心PLC程序位于[`4_20250114_还差机器人转速设置`](Codes/Robotic_Milling_Necessities/PLC_C#上位机_20250113/4_20250114_还差机器人转速设置)文件夹内：[**`THU_LIMES_RoboticMillingSystem_Finish_20250113_V18.ap18`**](Codes/Robotic_Milling_Necessities/PLC_C#上位机_20250113/4_20250114_还差机器人转速设置/THU_LIMES_RoboticMillingSystem_Finish_20250114_V18/THU_LIMES_RoboticMillingSystem_Finish_20250113_V18.ap18)。使用西门子TIA博途V18版本，功能包括：主轴转速监测、主轴启停与转速控制信号发送、气动系统控制（拉刀、换刀、气密、中心吹尘）及加工状态三色灯控制等。
+整套机器人加工系统的核心PLC程序位于[`4_20250114_还差机器人转速设置`](Codes/Robotic_Milling_Necessities/PLC_CSharp上位机_20250113/4_20250114_还差机器人转速设置)文件夹内：[**`THU_LIMES_RoboticMillingSystem_Finish_20250113_V18.ap18`**](Codes/Robotic_Milling_Necessities/PLC_CSharp上位机_20250113/4_20250114_还差机器人转速设置/THU_LIMES_RoboticMillingSystem_Finish_20250114_V18/THU_LIMES_RoboticMillingSystem_Finish_20250113_V18.ap18)。使用西门子TIA博途V18版本，功能包括：主轴转速监测、主轴启停与转速控制信号发送、气动系统控制（拉刀、换刀、气密、中心吹尘）及加工状态三色灯控制等。
 
 * **[`ROS_Vision`](Codes/ROS_Vision)**：  
 ROS与视觉系统相关程序（由吴珩管理）。
