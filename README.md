@@ -9,12 +9,9 @@ Robotic Machining System @Tsinghua: Custom ABB IRB6700 (2.6m reach, 200kg load, 
 > 在此插入视频或GIF动图吸引眼球  
 > （例如，上传`robot_machining_demo.mp4`后，在README中插入以下HTML代码）:
 > 
-> ```html
-> <video width="600" controls>
->   <source src="Media/vd11_机器人加工系统功能展示_20250516.mp4" type="video/mp4">
->   您的浏览器不支持视频播放，请下载后观看。
-> </video>
-> ```
+> 📌 **Robotic milling system construction (Click to Watch Video)**  
+> [▶️ Watch Demo Video](https://drive.google.com/file/d/1IW6d7zLTxaNsqKViqW-QUM10UKJw6B21/view)
+
 > 
 > 或者上传一张GIF或图片后，以Markdown插入图片方式：
 > 
