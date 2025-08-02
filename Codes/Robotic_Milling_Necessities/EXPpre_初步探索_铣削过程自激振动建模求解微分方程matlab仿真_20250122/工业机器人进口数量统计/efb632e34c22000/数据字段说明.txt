@@ -1,0 +1,6 @@
+yearNo : 年份
+provinceCode : 省份代码
+provinceName : 省份名称
+quantity : 数量
+rmb : 人民币
+usd : 美元

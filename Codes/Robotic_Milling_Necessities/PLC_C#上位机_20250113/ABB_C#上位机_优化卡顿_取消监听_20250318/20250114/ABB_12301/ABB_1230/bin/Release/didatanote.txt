@@ -1,0 +1,16 @@
+di15_CNC2Have/CNC2夹具中有产品
+di14_ResetE_Stop/急停复位信号
+di13_MotorOn/电机上电信号
+di12_ResetError/错误复位信号
+di11_StartAtMain/从主程序开始信号
+di10_Stop/程序停止信号
+di9_Start/程序开始信号
+di8_CNC1Have/CNC1夹具中有产品
+di7_clamped2/CNC2夹具到位信号
+di6_closed2/CNC1关门信号
+di5_clamped1/CNC1夹料夹具到位信号
+di4_closed1/CNC1关门信号
+di3_Y_ok/黄色夹爪，抓取成品ok
+di2_G_ok/绿色夹爪，抓取成品ok
+di1_low_ok/下层料台准备完成信号
+di0_up_ok/上层料台准备完成信号

@@ -1,0 +1,339 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%_CHATTER VIBRATION ANALYSIS IN THIN WALL MILLING_%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+clc
+clear all
+close all
+% format
+format compact
+
+%% Variable declaration
+
+global omega_nx omega_ny xi_x xi_y Kt Kr kx ky a N Z T theta time theta_entry theta_exit mx my fz f
+global f1 c1 k1 f2 c2 k2 f1_sum f2_sum state
+
+Kt = 600; % tangential cutting coefficient (from data book) in MPa
+Kr = 0.2; % radial cutting coefficient (from data book) 
+
+xi_x = 0.131; % damping ratio in x dirn
+xi_y = 0.131; % damping ratio in y dirn
+omega_nx = 641; % natural frequency in Hz (x compnt)
+omega_ny = 641; % natural frequency in Hz (y compnt)
+kx = 3.258e6; % stiffness in N/m
+ky = 3.327e6; % stiffness in N/m
+
+% mx = 10; % modal mass
+% my = 10;
+
+mx = kx / omega_nx ^ 2;
+my = ky / omega_ny ^ 2;
+
+a = 3; % axial depth of cut, ADOC in mm
+
+N = 4250; % rpm
+Z = 3; % no. of teeth on cutter
+T = 60/(N*Z); % tooth passing period
+% f = 798;  % feed in mm/min
+% Calculate feed per revolution (mm/rev)
+% f_rev = f / N;  % feed per revolution in mm/rev
+f_rev = 0.1; % feed per rev, mm/rev
+f = f_rev * N;
+% Calculate feed per tooth (mm/tooth)
+fz = f_rev / Z;  % feed per tooth in mm/tooth
+% fz = f/Z; % feed per tooth
+
+lags = [T T]; % time lags for DDE equal to tooth passing period
+
+tf = 2; % total time of simulation
+
+amplitude = 1e-8;  % Amplitude of the sine wave
+frequency = 2 * pi;  % Frequency of the sine wave in radians/second
+
+theta = 0; % instantaneous theta initialized
+theta_entry = 0 *pi/180; % in rads
+theta_exit = 90 *pi/180; % in rads
+x=0;
+y=0;
+
+state = 0; % represents time in steps of tooth passing time
+state_idx = 0;
+time = linspace(0,tf,10000); % in secs
+
+%% First calculation
+
+f1_sum = 0;
+f2_sum = 0;
+fprintf('################ Simulation begins ################');
+for tooth = 1:Z
+        
+    theta = 2*pi*N*state/60 + Z*2*pi/N;
+    fprintf('< %d >-----',tooth);
+    engagement = g(theta);
+    f1 = ( Kt*Kr*a*(-sin(theta)) + Kt*a*(-cos(theta)) )*engagement;
+    f2 = ( Kt*Kr*a*(-cos(theta)) + Kt*a*(sin(theta)) )*engagement;
+
+    f1_sum = f1 + f1_sum;
+    f2_sum = f2 + f2_sum;
+
+end
+
+c1 = -2*xi_x*omega_nx;
+k1 = -omega_nx^2;
+
+c2 = -2*xi_y*omega_ny;
+k2 = -omega_ny^2;
+
+
+options = ddeset('Event',@ChtrEvents); % custom trigger event is set
+state = state + T
+state_idx = state_idx + 1;
+sol = dde23(@ddefunc, lags, @yhist, [0 tf], options);
+
+%% Simulation calculations till final time
+tolerance = 1e-6;
+
+while (tf - sol.x(end)) > tolerance
+    state = state + T;
+    state_idx = state_idx + 1;
+
+    fprintf('\n______________Integration Restart at %5.6f_____________\n', sol.x(end));
+    fprintf('state value after this cycle = %f \n',state);
+    
+    f1_sum = 0;
+    f2_sum = 0;
+    
+    for tooth = 1:Z
+                
+        theta = 2*pi*N*state/60 + (tooth-1)*2*pi/Z;
+        fprintf('< %d >-----',tooth);
+        engagement = g(theta);
+        f1 = ( Kt*Kr*a*(-sin(theta)) + Kt*a*(-cos(theta)) )*engagement;
+        f2 = ( Kt*Kr*a*(-cos(theta)) + Kt*a*(sin(theta)) )*engagement;
+        
+        f1_sum = f1 + f1_sum;
+        f2_sum = f2 + f2_sum;
+        
+    end
+    
+    c1 = -2*xi_x*omega_nx;
+    k1 = -omega_nx^2;
+    
+    c2 = -2*xi_y*omega_ny;
+    k2 = -omega_ny^2;
+    
+    % calculating the solution
+    sol = dde23(@ddefunc, lags, sol, [sol.x(end) tf], options);
+   
+    % Add the sine wave initial profile to y1 (y-displacement) and x1 (x-displacement)
+    sol.y(1, :) = sol.y(1, :) + amplitude * sin(frequency * sol.x);  % y-displacement
+    sol.y(3, :) = sol.y(3, :) + amplitude * cos(frequency * sol.x);  % x-displacement
+
+    %y = deval(sol, t); % t is diif from time
+    fprintf('sol.x(end) = %f\n', sol.x(end));
+end
+fprintf('\n******************Simulation Done******************\n\n');
+
+%% Roughness calculations
+
+Ray = 0; % avg. roughness y dirn
+for i = 1:length(sol.x)
+    itr = i-1;
+    if itr == 0
+        prevTime = 0;
+    else
+        prevTime = sol.x(1,itr);
+    end
+    Ray = Ray + abs(sol.y(1,i))*( sol.x(1,i) - prevTime )/tf ;
+end
+
+% Average Roughness in Y direction
+fprintf('Average Roughness Ra\n');
+fprintf('Ra_y = %f μm\n',Ray*1e6);
+
+Rax = 0; % avg. roughness x dirn
+for i = 1:length(sol.x)
+    itr = i-1;
+    if itr == 0
+        prevTime = 0;
+    else
+        prevTime = sol.x(1,itr);
+    end
+    Rax = Rax + abs(sol.y(3,i))*( sol.x(1,i) - prevTime )/tf ;
+end
+
+% Average Roughness in X direction
+fprintf('Ra_x = %f μm\n\n',Rax*1e6);
+
+Rqy = 0; % rms roughness y dirn
+for i = 1:length(sol.x)
+    itr = i-1;
+    if itr == 0
+        prevTime = 0;
+    else
+        prevTime = sol.x(1,itr);
+    end
+    Rqy = Rqy + ( (sol.y(1,i))^2 )*( sol.x(1,i) - prevTime )/tf ;
+end
+Rqy = sqrt(Rqy);
+% Root mean square Roughness in Y direction
+fprintf('Root mean square Roughness Rq\n');
+fprintf('Rq_y = %f μm\n',Rqy*1e6);
+
+Rqx = 0; % rms roughness x dirn
+for i = 1:length(sol.x)
+    itr = i-1;
+    if itr == 0
+        prevTime = 0;
+    else
+        prevTime = sol.x(1,itr);
+    end
+    Rqx = Rqx + ( (sol.y(3,i))^2 )*( sol.x(1,i) - prevTime )/tf ;
+end
+Rqx = sqrt(Rqx);
+% Root mean square Roughness in X direction
+fprintf('Rq_x = %f μm\n\n',Rqx*1e6);
+
+Rty = max(sol.y(1,:)) - min(sol.y(1,:));
+Rtx = max(sol.y(3,:)) - min(sol.y(3,:));
+
+% Total height of profile
+fprintf('Total height of profile\n');
+fprintf('Rt_y = %f μm\n',Rty*1e6);
+fprintf('Rt_x = %f μm\n\n',Rtx*1e6);
+
+%% Amplitude plots- Separate graphs
+
+% figure
+% plot(sol.x,sol.y(1,:));
+% title('Vibration profile');
+% % set(gca,'FontSize', 12);
+% ylabel('y displacement in mm');
+% xlabel('time');
+% 
+% figure
+% plot(sol.x,sol.y(3,:));
+% title('Vibration profile');
+% % set(gca,'FontSize', 12);
+% ylabel('x displacement in mm');
+% xlabel('time');
+
+%% Amplitude plots- Combined graph
+
+figure
+subplot(2,1,1)
+plot(sol.x,sol.y(1,:)*1e6);
+title('Amplitude variation in Y direction')
+set(gca,'FontSize', 14);
+ylabel('y displacement in μm');
+xlabel('time');
+
+subplot(2,1,2)
+% plot(t, x, 'red');
+plot(sol.x,sol.y(3,:)*1e6);
+title('Amplitude variation in X direction')
+set(gca,'FontSize', 14);
+ylabel('x displacement in μm');
+xlabel('time');
+%%
+% f is the feed rate in mm/min, already defined in the script
+% Convert the feed rate to mm/s (feed per second)
+feed_rate_per_second = f / 60;  % mm/s
+
+% Compute the tool path step for each time increment
+tool_path_step = diff(sol.x) * feed_rate_per_second;  % Vector of tool path increments
+
+% Initialize tool position array and accumulate positions
+tool_position_x = zeros(1, length(sol.x));  % Initialize tool positions (X-direction)
+tool_position_x(2:end) = cumsum(tool_path_step);  % Accumulate the tool path from the feed steps
+
+% Now, plot the tool path (X) vs tool vibration (Y)
+figure;
+plot(tool_position_x, sol.y(1,:) * 1e6);  % Plot X vs Y displacement (in microns)
+title('Tool Vibration (Y-displacement) along the Tool Path (X)');
+xlabel('Tool Path (mm)');
+ylabel('Tool Y-displacement (μm)');
+grid on;
+
+%%
+% % Parameters for the initial profile
+% amplitude = 1e-6;  % Amplitude of the sine wave (1 micron)
+% frequency = 2 * pi;  % Frequency of the sine wave (radians per second)
+% t = linspace(0, tf, 1000);  % Time vector from 0 to final time (tf)
+% 
+% % Initial profile for y-displacement (sine wave) and x-displacement (cosine wave)
+% y_initial_profile = amplitude * sin(frequency * t);  % y-displacement (sine wave)
+% x_initial_profile = amplitude * cos(frequency * t);  % x-displacement (cosine wave)
+% 
+% % Plot the initial profiles
+% figure;
+% 
+% % Subplot for y-displacement (sine wave)
+% subplot(2, 1, 1);
+% plot(t, y_initial_profile * 1e6, 'LineWidth', 1.5);  % Convert to microns for display
+% title('Initial Y-displacement Profile (Sine Wave)');
+% xlabel('Time (s)');
+% ylabel('Y-displacement (\mum)');
+% grid on;
+% 
+% % Subplot for x-displacement (cosine wave)
+% subplot(2, 1, 2);
+% plot(t, x_initial_profile * 1e6, 'LineWidth', 1.5);  % Convert to microns for display
+% title('Initial X-displacement Profile (Cosine Wave)');
+% xlabel('Time (s)');
+% ylabel('X-displacement (\mum)');
+% grid on;
+% 
+% % Display the figure
+% sgtitle('Initial Surface Profile - X and Y Displacement');
+
+
+%% Function declarations
+function yp = ddefunc(t, y, YL)
+    
+     global theta c1 k1 f1_sum fz mx c2 k2 f2_sum my
+    
+    yl1 = YL(:,1); % lag on y
+    yl2 = YL(:,2); % lag on x
+    y1 = y(1);
+    y2 = y(2);
+    x1 = y(3);
+    x2 = y(4);
+
+    yp = [ y2;
+           c2*y2 + k2*y1 + f2_sum*fz*sin(theta)/my + f2_sum*sin(theta)/my*(x1 - yl2(2)) + f2_sum*cos(theta)/my*(y1 - yl1(1)) ;
+           x2;
+           c1*x2 + k1*x1 + f1_sum*fz*sin(theta)/mx + f1_sum*sin(theta)/mx*(x1 - yl2(2)) + f1_sum*cos(theta)/mx*(y1 - yl1(1)) ] ; 
+end
+
+function y = yhist(t, sol)
+    y = [0 0 0 0]';
+end
+
+function [value,isterminal,direction] = ChtrEvents(t,y,YL)
+    global state
+%     t
+    if state-t == 0
+        fprintf('Event triggered. Integration terminated\n');
+    end
+    value = [state - t; state - t; state - t; state - t] ;
+    isterminal = [1; 1; 1; 1];
+    direction = [0; 0; 0; 0];
+    
+end
+
+function intermittent_check = g(theta)
+    
+    global theta_entry theta_exit
+    fprintf('theta = %5.10f\n',theta);
+    fprintf('theta in 0 to 360: %4.4f \n', mod(theta,2*pi));
+    
+    if (theta_entry < mod(theta,2*pi)) && (mod(theta,2*pi) < theta_exit)
+        intermittent_check = 1;
+        fprintf('tooth engaged\n');
+    else
+        intermittent_check = 0;
+        fprintf('tooth is free\n');
+    end
+end
+

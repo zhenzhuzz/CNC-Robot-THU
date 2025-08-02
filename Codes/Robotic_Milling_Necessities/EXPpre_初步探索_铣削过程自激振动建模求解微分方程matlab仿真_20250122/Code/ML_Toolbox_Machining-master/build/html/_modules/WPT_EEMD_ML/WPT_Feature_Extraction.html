@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WPT_EEMD_ML.WPT_Feature_Extraction &mdash; Machine learning toolbox for WPT and EEMD 0.1 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+            <a href="../../index.html" class="icon icon-home"> Machine learning toolbox for WPT and EEMD
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">1.  Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../installation.html#requirements">1.1. Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../installation.html#installation">1.2. Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">2.  Modules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../chatter_detection.html">2.1. Chatter Detection</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../WPT.html">2.1.1. Wavelet Packet Transform (WPT)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../EEMD.html">2.1.2. Ensemble Empirical Mode Decomposition (EEMD)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../DTW.html">2.1.3. Dynamic Time Warping (DTW)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FFT.html">2.1.4. Fast Fourier Transfrom (FFT)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../PSD.html">2.1.5. Power Spectral Density (PSD)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ACF.html">2.1.6. Autocorrelation Function (ACF)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../TDA.html">2.1.7. Topological Data Analysis (TDA)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../surface_texture.html">2.2. Surface Texture Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">3.  Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contributing.html#contributing-to-documentation">3.1. Contributing to Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../license.html">4.  License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../citing.html">5.  Citing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Machine learning toolbox for WPT and EEMD</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+      <li>WPT_EEMD_ML.WPT_Feature_Extraction</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for WPT_EEMD_ML.WPT_Feature_Extraction</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">skew</span>
+<span class="kn">from</span> <span class="nn">WPT_EEMD_ML.WPT_Informative_Packet_Recon</span> <span class="kn">import</span> <span class="n">WPT_Informative_Packet_Recon</span>
+<span class="kn">from</span> <span class="nn">WPT_EEMD_ML.WP_Energy_Ratio</span> <span class="kn">import</span> <span class="n">AbsFFT</span>
+
+
+<div class="viewcode-block" id="WPT_Feature_Extraction"><a class="viewcode-back" href="../../WPT.html#WPT_EEMD_ML.WPT_Feature_Extraction.WPT_Feature_Extraction">[docs]</a><span class="k">def</span> <span class="nf">WPT_Feature_Extraction</span><span class="p">(</span><span class="n">data_path</span><span class="p">,</span> <span class="n">list_name</span><span class="p">,</span><span class="n">label_name</span><span class="p">,</span><span class="n">WF</span><span class="p">,</span><span class="n">L</span><span class="p">,</span><span class="n">IWP</span><span class="p">,</span><span class="n">fs</span><span class="p">,</span><span class="n">saving</span><span class="p">,</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    </span>
+<span class="sd">    :param str (data_path): The path where user keeps the data set</span>
+<span class="sd">  </span>
+<span class="sd">    :param str (list_name): Name of the .txt file that includes the names of time series data </span>
+<span class="sd">    </span>
+<span class="sd">    :param str (label_name): Name of the .npy file that includes labels of the time series</span>
+<span class="sd">        </span>
+<span class="sd">    :param str (WF): Wavelet function</span>
+<span class="sd">       	</span>
+<span class="sd">    :param  int (L): Level of the transform which will be applied to data set</span>
+<span class="sd">    </span>
+<span class="sd">    :param int (IWP): Informative Wavelet Packet number</span>
+<span class="sd">        </span>
+<span class="sd">    :param int (fs): Sampling frequency of the data set</span>
+<span class="sd">    </span>
+<span class="sd">    :param boolean (saving): Set it to true if you want to save reconstructed signals </span>
+<span class="sd">    </span>
+<span class="sd">    :Returns:</span>
+
+<span class="sd">        :feature_mat:</span>
+<span class="sd">            (np.array([])) Feature matrix </span>
+<span class="sd">           </span>
+<span class="sd">        :labels: </span>
+<span class="sd">            (np.array([])) Labels</span>
+<span class="sd">            </span>
+<span class="sd">        :time:</span>
+<span class="sd">            (str) Elapsed time during feature matrix generation </span>
+<span class="sd">    </span>
+<span class="sd">    :Example:</span>
+<span class="sd">    </span>
+<span class="sd">        .. doctest::</span>
+<span class="sd">                       </span>
+<span class="sd">           from WPT_EEMD_ML.WPT_Feature_Extraction import WPT_Feature_Extraction</span>
+<span class="sd">           </span>
+<span class="sd">           # parameters</span>
+<span class="sd">            </span>
+<span class="sd">           data_path = &#39;D:\\Data Archive\\Cutting_Test_Data_Documented\\cutting_tests_processed\\2inch_stickout&#39;</span>
+<span class="sd">           list_name = &#39;time_series_name_2inch.txt&#39;</span>
+<span class="sd">           WF = &#39;db10&#39;</span>
+<span class="sd">           L=4</span>
+<span class="sd">           IWP = 3</span>
+<span class="sd">           label_name = &#39;2_inch_Labels_2Class.npy&#39;</span>
+<span class="sd">           saving = False</span>
+<span class="sd">           fs = 10000 </span>
+<span class="sd">         </span>
+<span class="sd">           feature_mat,labels = WPT_Feature_Extraction(data_path, list_name,label_name,WF,L,IWP,fs,saving)</span>
+<span class="sd">   </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">#%% Loading time series and labels</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+    
+    <span class="c1"># file path to folder where the data is kept</span>
+    <span class="n">file_path</span> <span class="o">=</span> <span class="n">data_path</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="o">+</span><span class="n">list_name</span>
+    <span class="n">label_path</span> <span class="o">=</span>  <span class="n">data_path</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="o">+</span><span class="n">label_name</span>
+
+    <span class="c1"># read the file that includes the name of datafiles</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">data_names</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
+        
+    <span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_names</span><span class="p">)</span>
+   
+    <span class="c1"># import the classification labels</span>
+    <span class="n">label</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">label_path</span><span class="p">)</span>
+
+    <span class="c1"># reconstruct signals from informative wavelet packet</span>
+    <span class="k">if</span> <span class="n">saving</span><span class="p">:</span>
+        <span class="n">recon</span> <span class="o">=</span> <span class="n">WPT_Informative_Packet_Recon</span><span class="p">(</span><span class="n">data_path</span><span class="p">,</span><span class="n">list_name</span><span class="p">,</span><span class="n">WF</span><span class="p">,</span><span class="n">L</span><span class="p">,</span><span class="n">IWP</span><span class="p">,</span><span class="n">saving</span><span class="p">,</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">recon</span> <span class="o">=</span> <span class="n">WPT_Informative_Packet_Recon</span><span class="p">(</span><span class="n">data_path</span><span class="p">,</span><span class="n">list_name</span><span class="p">,</span><span class="n">WF</span><span class="p">,</span><span class="n">L</span><span class="p">,</span><span class="n">IWP</span><span class="p">,</span><span class="n">saving</span><span class="p">)</span>   
+        
+    <span class="c1"># compute features</span>
+    <span class="n">featuremat</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">N</span> <span class="p">,</span><span class="mi">14</span><span class="p">))</span>
+        
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+
+        <span class="n">ts</span> <span class="o">=</span> <span class="n">recon</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        
+        <span class="c1"># compute time domain features</span>
+        
+        <span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">(</span><span class="n">ts</span><span class="p">)</span>
+        <span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">ts</span><span class="p">)</span>
+        <span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">ts</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>   
+        <span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">ts</span><span class="p">))</span>
+        <span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="n">skew</span><span class="p">(</span><span class="n">ts</span><span class="p">)</span>
+        <span class="n">L</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">ts</span><span class="p">)</span>
+        <span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">ts</span><span class="o">-</span><span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="mi">4</span><span class="p">))</span> <span class="o">/</span> <span class="p">((</span><span class="n">L</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="mi">4</span><span class="p">))</span>
+        <span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+        <span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span> <span class="o">=</span> <span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">ts</span><span class="p">)))),</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span> <span class="o">=</span> <span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">((</span><span class="nb">abs</span><span class="p">(</span><span class="n">ts</span><span class="p">))))</span>
+        <span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span> <span class="o">=</span> <span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">((</span><span class="nb">abs</span><span class="p">(</span><span class="n">ts</span><span class="p">))))</span>        
+
+        <span class="c1"># compute FFT of the reconstructed signals</span>
+        <span class="n">xf</span><span class="p">,</span><span class="n">yf</span> <span class="o">=</span> <span class="n">AbsFFT</span><span class="p">(</span><span class="n">recon</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">fs</span><span class="p">)</span>
+        
+        <span class="c1"># frequency domain features</span>
+        <span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">((</span><span class="n">xf</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">yf</span><span class="p">)</span><span class="o">/</span><span class="nb">sum</span><span class="p">(</span><span class="n">yf</span><span class="p">)</span> <span class="c1">#mean square frequency</span>
+        <span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">11</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">xf</span><span class="o">*</span><span class="mi">1</span><span class="o">/</span><span class="n">fs</span><span class="p">)</span><span class="o">*</span><span class="n">yf</span><span class="p">)</span><span class="o">/</span><span class="nb">sum</span><span class="p">(</span><span class="n">yf</span><span class="p">)</span> <span class="c1"># one step auto correlation function</span>
+        <span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">12</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">xf</span><span class="o">*</span><span class="n">yf</span><span class="p">)</span><span class="o">/</span><span class="nb">sum</span><span class="p">(</span><span class="n">yf</span><span class="p">)</span> <span class="c1"># frequency center</span>
+        <span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">13</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(((</span><span class="n">xf</span><span class="o">-</span><span class="n">featuremat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">12</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">yf</span><span class="p">)</span><span class="o">/</span><span class="nb">sum</span><span class="p">(</span><span class="n">yf</span><span class="p">)</span> <span class="c1"># standard frequency</span>
+        
+        
+
+    <span class="c1"># concatanate feature matrix and the label matrix and then shuffle them</span>
+    <span class="n">feat_lab</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">featuremat</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">label</span><span class="p">,(</span><span class="nb">len</span><span class="p">(</span><span class="n">label</span><span class="p">),</span><span class="mi">1</span><span class="p">))),</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">feat_lab</span><span class="p">)</span>
+    
+    <span class="n">feature_mat</span> <span class="o">=</span> <span class="n">feat_lab</span><span class="p">[:,</span><span class="mi">0</span><span class="p">:</span><span class="mi">14</span><span class="p">]</span>
+    <span class="n">labels</span> <span class="o">=</span> <span class="n">feat_lab</span><span class="p">[:,</span><span class="mi">14</span><span class="p">]</span>
+    <span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">saving</span><span class="p">:</span>
+        <span class="n">output</span><span class="o">=</span><span class="p">{}</span>
+        <span class="n">output</span><span class="p">[</span><span class="s1">&#39;features&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">feature_mat</span>
+        <span class="n">output</span><span class="p">[</span><span class="s1">&#39;labels&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">labels</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">data_path</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="o">+</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">output</span><span class="p">)</span>    
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Feature computation is completed in </span><span class="si">{}</span><span class="s2"> seconds.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">end</span><span class="o">-</span><span class="n">start</span><span class="p">))</span>
+    
+    <span class="k">return</span> <span class="n">feature_mat</span><span class="p">,</span><span class="n">labels</span></div>
+    
+  
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Melih C. Yesilli, Firas A. Khasawneh, Andreas Otto.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

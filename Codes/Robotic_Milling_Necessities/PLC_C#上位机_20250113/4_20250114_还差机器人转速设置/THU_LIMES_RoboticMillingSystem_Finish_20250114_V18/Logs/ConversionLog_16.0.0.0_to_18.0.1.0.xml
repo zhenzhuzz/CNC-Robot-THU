@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='ConversionLogFile.xsl'?>
+<LogFile projectName="THU_LIMES_RoboticMillingSystem_20241015_V18" typeText="类型" messageText="消息" timeText="时间">
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:32">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="已开始升级" />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <Details ServiceId="80" MessageId="30" Timestamp="2024/10/28 9:27:36" Debug="false">
+    <Text>Reorganization succeed!</Text>
+  </Details>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:36">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="CheckRepair lost+found objects" />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <Details ServiceId="80" MessageId="30" Timestamp="2024/10/28 9:27:38" Debug="false">
+    <Text>No error is detected.</Text>
+  </Details>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:38">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="CheckRepair missing bidirectional links" />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <Details ServiceId="80" MessageId="30" Timestamp="2024/10/28 9:27:38" Debug="false">
+    <Text>No error is detected.</Text>
+  </Details>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:39">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="CheckRepair clear segment flags" />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <Details ServiceId="80" MessageId="30" Timestamp="2024/10/28 9:27:39" Debug="false">
+    <Text>No error is detected.</Text>
+  </Details>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:48">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="C0010:1015 Repair 'Comment' for DeviceDataObject 'S7-1200 station_1'. Comment object had no culture infos." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:48">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="C0010:1015 Repair 'Comment' for DeviceDataObject 'GSD device_1'. Comment object had no culture infos." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:49">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="用户已使用所需的工程组态权限“升级项目”登录。" />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:49">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="Starting removal of system role assignments compatibility from system device function rights" />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:49">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="Finished removal of system role assignments compatibility from system device function rights" />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:49">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="正在移除旧的系统角色。" />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:49">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="移除旧的系统角色操作已完成。" />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:49">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="Starting change link between DFR and DFRSet" />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:49">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="Finished change link between DFR and DFRSet" />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:49">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="Starting data conversion workflow for umac entities i.e. System Role, EFR &amp; DFR" />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:49">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="Finished data conversion workflow for umac entities i.e. System Role, EFR &amp; DFR" />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Warning" Timestamp="2024/10/28 9:27:54">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="项目元素：“\PLC_1\ProgramBlocksFolder\电主轴速度采集”- “General”的校验和不一致." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Warning" Timestamp="2024/10/28 9:27:54">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="项目元素：“\PLC_1\ProgramBlocksFolder\电主轴速度调节”- “General”的校验和不一致." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Warning" Timestamp="2024/10/28 9:27:54">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="项目元素：“\PLC_1\ProgramBlocksFolder\气动控制”- “General”的校验和不一致." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Warning" Timestamp="2024/10/28 9:27:54">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="项目元素：“\PLC_1\ProgramBlocksFolder\报警”- “General”的校验和不一致." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Warning" Timestamp="2024/10/28 9:27:54">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="项目元素：“\PLC_1\ProgramBlocksFolder\Main”- “General; Event”的校验和不一致." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Warning" Timestamp="2024/10/28 9:27:54">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="项目元素：“\PLC_1\ProgramBlocksFolder\Cyclic interrupt”- “General; Event”的校验和不一致." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Warning" Timestamp="2024/10/28 9:27:54">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="项目元素：“\PLC_1\ProgramBlocksFolder\Hardware interrupt”- “General; Event”的校验和不一致." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Warning" Timestamp="2024/10/28 9:27:54">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="项目元素：“\PLC_1\ProgramBlocksFolder\Send_HMI_Data”- “General”的校验和不一致." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Warning" Timestamp="2024/10/28 9:27:54">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="项目元素：“\PLC_1\ProgramBlocksFolder\电主轴运行数据”- “General”的校验和不一致." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Warning" Timestamp="2024/10/28 9:27:54">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="项目元素：“\PLC_1\ProgramBlocksFolder\DB_HSC”- “General”的校验和不一致." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Warning" Timestamp="2024/10/28 9:27:54">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="项目元素：“\PLC_1\ProgramBlocksFolder\电主轴速度调节_DB”- “General”的校验和不一致." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Warning" Timestamp="2024/10/28 9:27:54">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="项目元素：“\PLC_1\ProgramBlocksFolder\电主轴速度采集_DB”- “General”的校验和不一致." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Warning" Timestamp="2024/10/28 9:27:54">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="项目元素：“\PLC_1\ProgramBlocksFolder\电主轴速度采集_DB_1”- “General”的校验和不一致." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Warning" Timestamp="2024/10/28 9:27:54">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="项目元素：“\PLC_1\ControllerDataTypeFolder\电机运行及调速控制”- “General”的校验和不一致." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:55">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="Check/Adapt for invalid idents in 监控表_1:&#xD;&#xA;Ident was checked and adapted:  IdentType:SimpleAccess Ident RefId:&#xD;&#xA;18Ident was checked and adapted:  IdentType:SimpleAccess Ident RefId:&#xD;&#xA;19" />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:56">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="正在转换交叉引用信息。" />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:57">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="交叉引用信息已成功创建." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:57">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="交叉引用信息转换完成。" />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <Details ServiceId="80" MessageId="30" Timestamp="2024/10/28 9:27:57" Debug="false">
+    <Text>Package container 'Siemens.Simatic.Lang.S7BSW.V16.0.0.0.NonMandatory' was deleted</Text>
+  </Details>
+  <MessageCell ServiceId="Automation-ObjectFrame-Feedbacks" MessageId="ConversionInfoTabProjectSucceeded" MessageClass="Success" Timestamp="2024/10/28 9:27:57">
+    <Number ServiceNumber="80" MessageNumber="34" />
+    <Text FeedbackText="项目“C:\Users\项目文件\3.清华大学项目改造\PLC\THU_LIMES_RoboticMillingSystem_20241015\THU_LIMES_RoboticMillingSystem_20241015\System\PEData.plf”已成功升级并另存为项目“C:\Users\项目文件\3.清华大学项目改造\PLC\THU_LIMES_RoboticMillingSystem_20241015\THU_LIMES_RoboticMillingSystem_20241015_V18\System\PEData.plf”。" />
+    <Help HelpId="-1" HelpFile="" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="2024/10/28 9:27:57">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="FinalCheckRemainingErrors" />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <Details ServiceId="80" MessageId="30" Timestamp="2024/10/28 9:27:57" Debug="false">
+    <Text>No error is detected.</Text>
+  </Details>
+</LogFile>

@@ -1,0 +1,25 @@
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\obj\Debug\ABB_二次开发1230.ForemstartNew.resources
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\obj\Debug\ABB_二次开发1230.Form1.resources
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\obj\Debug\ABB_二次开发1230.Properties.Resources.resources
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\obj\Debug\ABB_二次开发1230.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\obj\Debug\ABB_二次开发1230.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\bin\Debug\ABB_二次开发1230.exe.config
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\bin\Debug\ABB_二次开发1230.exe
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\bin\Debug\ABB_二次开发1230.pdb
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\bin\Debug\ABB.Robotics.Controllers.PC.dll
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\bin\Debug\HslCommunication.dll
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\bin\Debug\RobotStudio.Services.RobApi.dll
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\bin\Debug\RobotStudio.Services.RobApi.Desktop.dll
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\bin\Debug\ABB.Robotics.Controllers.PC.xml
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\bin\Debug\HslCommunication.xml
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\obj\Debug\ABB_二次开发1230.exe
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\obj\Debug\ABB_二次开发1230.pdb
+C:\Users\Administrator\source\repos\ABB_二次开发1230\ABB_二次开发1230\obj\Debug\ABB_二次开发1230.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_二次开发1230\obj\Debug\ABB_二次开发1230.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_二次开发1230\obj\Debug\ABB_二次开发1230.ForemstartNew.resources
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_二次开发1230\obj\Debug\ABB_1230.Form1.resources
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_二次开发1230\obj\Debug\ABB_1230.Properties.Resources.resources
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_二次开发1230\obj\Debug\ABB_二次开发1230.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_二次开发1230\obj\Debug\ABB_二次开发1230.csproj.CoreCompileInputs.cache

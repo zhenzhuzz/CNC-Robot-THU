@@ -1,0 +1,61 @@
+clc
+clear
+close all
+% Script to load the data and plot the required figures
+% 脚本用于加载数据并绘制所需的图形
+
+% Step 1: Load the table using f040_load_table_05 function
+% 步骤 1：使用 f040_load_table_05 函数加载表格
+dataSheet = f040_load_table_05('EXP20250327Data'); % Ensure the table name is passed here
+%%
+% Step 2: Get the file path of the first row's path column
+% 步骤 2：获取第一行的 path 列中的文件路径
+filePath = dataSheet.path{1}; % Assuming path is a cell array of strings
+data = load(filePath); % Load the txt file from the path
+
+% Step 3: Extract columns from the loaded data
+% 步骤 3：从加载的数据中提取列
+timestamps = data(:, 1);  % 第一列是时间戳
+accX = data(:, 2);       % 第二列是 accX
+spinSpeed = data(:, 3);  % 第三列是 spinSpeed
+
+% Step 4: Create a figure with 3 subplots
+% 步骤 4：创建一个包含 3 个子图的图形
+figure('Units','centimeters','Position',[5 2 15 15]);
+
+% Step 5: Plot timestamps vs accX in the first subplot
+% 步骤 5：在第一个子图中绘制时间戳与 accX 的关系
+ax1 = subplot(3, 1, 1);
+plot(ax1, timestamps, accX);
+f030_optimizeFig_Paper_05(ax1, 'Timestamps (s)', 'Acceleration (g)', 'Acceleration vs Timestamps', {}, 'northeast');
+
+% Step 6: Plot timestamps vs spinSpeed in the second subplot
+% 步骤 6：在第二个子图中绘制时间戳与 spinSpeed 的关系
+ax2 = subplot(3, 1, 2);
+plot(ax2, timestamps, spinSpeed);
+xlim tight;
+ylim tight;
+f030_optimizeFig_Paper_05(ax2, 'Timestamps (s)', 'Spin Speed (rpm)', 'Spin Speed vs Timestamps', {}, 'northeast');
+
+% Step 7: Calculate the FFT of accX in the 8-9 second range
+% 步骤 7：计算 8-9 秒区间内 accX 的 FFT
+start_time = 8;  % 起始时间
+end_time = 9;    % 结束时间
+
+% Extract data between 5-7 seconds
+% 提取 5-7 秒之间的数据
+idx = timestamps >= start_time & timestamps <= end_time;
+t_selected = timestamps(idx);
+accX_selected = accX(idx);
+
+% Use f010_fourier_05 to calculate the FFT of the selected data
+% 使用 f010_fourier_05 函数计算选定数据的 FFT
+[f, X_f] = f010_fourier_05(t_selected, accX_selected, true);
+
+% Step 8: Plot the FFT of accX in the third subplot
+% 步骤 8：在第三个子图中绘制 accX 的 FFT
+ax3 = subplot(3, 1, 3);
+plot(ax3, f, X_f);
+hold on;
+f030_optimizeFig_Paper_05(ax3, 'Frequency (Hz)', 'Magnitude', 'FFT of Acceleration (8-9 seconds)', {}, 'northeast');
+

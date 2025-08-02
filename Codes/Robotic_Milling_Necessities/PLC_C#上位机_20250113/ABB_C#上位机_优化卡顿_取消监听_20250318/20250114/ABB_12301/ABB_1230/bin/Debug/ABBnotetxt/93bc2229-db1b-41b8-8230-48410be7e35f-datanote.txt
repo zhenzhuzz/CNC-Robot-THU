@@ -1,0 +1,10 @@
+Holder_Count/saad
+Panel_Floor/sdad
+Board_Count/asdaa
+Panel_Count/asdada
+Holder_Floor/adasd
+Board_Floor/asdada
+LeftPlaceOK/adasda
+LeftOK/asdasd
+RightPlaceOK/adasda
+RightOK/ada

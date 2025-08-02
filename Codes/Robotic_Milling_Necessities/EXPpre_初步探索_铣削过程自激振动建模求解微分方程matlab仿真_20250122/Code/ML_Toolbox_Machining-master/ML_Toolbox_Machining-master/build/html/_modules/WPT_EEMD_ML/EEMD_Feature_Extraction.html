@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WPT_EEMD_ML.EEMD_Feature_Extraction &mdash; Machine learning toolbox for WPT and EEMD 0.1 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+            <a href="../../index.html" class="icon icon-home"> Machine learning toolbox for WPT and EEMD
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">1.  Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../installation.html#requirements">1.1. Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../installation.html#installation">1.2. Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">2.  Modules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../chatter_detection.html">2.1. Chatter Detection</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../WPT.html">2.1.1. Wavelet Packet Transform (WPT)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../EEMD.html">2.1.2. Ensemble Empirical Mode Decomposition (EEMD)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../DTW.html">2.1.3. Dynamic Time Warping (DTW)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FFT.html">2.1.4. Fast Fourier Transfrom (FFT)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../PSD.html">2.1.5. Power Spectral Density (PSD)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ACF.html">2.1.6. Autocorrelation Function (ACF)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../TDA.html">2.1.7. Topological Data Analysis (TDA)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../surface_texture.html">2.2. Surface Texture Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">3.  Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contributing.html#contributing-to-documentation">3.1. Contributing to Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../license.html">4.  License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../citing.html">5.  Citing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Machine learning toolbox for WPT and EEMD</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+      <li>WPT_EEMD_ML.EEMD_Feature_Extraction</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for WPT_EEMD_ML.EEMD_Feature_Extraction</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Feature extraction using Ensemble Empirical Mode Decomposition </span>
+<span class="sd">--------------------------------------------------------------</span>
+
+
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="n">start2</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">PyEMD</span> <span class="kn">import</span> <span class="n">EEMD</span>
+<span class="kn">import</span> <span class="nn">scipy.io</span> <span class="k">as</span> <span class="nn">sio</span>
+<span class="kn">import</span> <span class="nn">os.path</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">skew</span>
+
+
+<div class="viewcode-block" id="preprocess_chatter_data"><a class="viewcode-back" href="../../EEMD.html#WPT_EEMD_ML.EEMD_Feature_Extraction.preprocess_chatter_data">[docs]</a><span class="k">def</span> <span class="nf">preprocess_chatter_data</span><span class="p">(</span><span class="n">data_path</span><span class="p">,</span><span class="n">list_name</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function is specifally designed for the chatter data set where we have </span>
+<span class="sd">    long time series whose IMF computation takes longer. </span>
+<span class="sd">    This function split the time series into small pieces to reduce the computation time. </span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    data_path : str</span>
+<span class="sd">        The path to data files.</span>
+<span class="sd">    list_name : str</span>
+<span class="sd">        The name of the txt file that contains the list of names of time series. </span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    split_data : Object Array</span>
+<span class="sd">        Object array that includes the split data </span>
+<span class="sd">    split_labels : ndarray</span>
+<span class="sd">        2D array which contains the labels of the split data</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># file path to folder where the data is kept</span>
+    <span class="n">file_path</span> <span class="o">=</span> <span class="n">data_path</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="o">+</span><span class="n">list_name</span>
+
+    <span class="c1"># read the file that includes the name of datafiles</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">data_names</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
+        
+    <span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_names</span><span class="p">)</span>
+   
+    <span class="c1"># Loading time series and labels of the classification</span>
+    
+    <span class="c1"># import the time series</span>
+    <span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_names</span><span class="p">)</span>     
+    <span class="n">data_L</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="c1">#load datasets and compute features</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span><span class="p">(</span><span class="n">data_names</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">ts</span> <span class="o">=</span> <span class="n">sio</span><span class="o">.</span><span class="n">loadmat</span><span class="p">(</span><span class="n">data_path</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="o">+</span><span class="n">name</span><span class="p">)[</span><span class="s1">&#39;tsDS&#39;</span><span class="p">]</span> 
+        <span class="n">L</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">ts</span><span class="p">)</span>
+        <span class="n">data_L</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+        
+        <span class="c1"># extract rpm and depth of cut information from name of the data set</span>
+        <span class="n">rpm</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">((</span><span class="n">L</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="nb">int</span><span class="p">(</span><span class="n">name</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">]))</span>
+        <span class="k">if</span> <span class="n">name</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;_&#39;</span><span class="p">:</span>
+            <span class="n">doc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">((</span><span class="n">L</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="nb">int</span><span class="p">(</span><span class="n">name</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="mi">9</span><span class="p">])</span><span class="o">*</span><span class="mf">0.001</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">doc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">((</span><span class="n">L</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="nb">int</span><span class="p">(</span><span class="n">name</span><span class="p">[</span><span class="mi">7</span><span class="p">:</span><span class="mi">10</span><span class="p">])</span><span class="o">*</span><span class="mf">0.001</span><span class="p">)</span>
+            
+        <span class="c1"># time series with &quot;i&quot; and &quot;c&quot; represents </span>
+        <span class="k">if</span> <span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;s&#39;</span><span class="p">:</span>
+            <span class="n">stability</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">((</span><span class="n">L</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">stability</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">((</span><span class="n">L</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
+        
+        <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">ts</span><span class="p">,</span><span class="n">rpm</span><span class="p">,</span><span class="n">doc</span><span class="p">,</span><span class="n">stability</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    
+    <span class="c1"># total data points in whole data set</span>
+    <span class="n">total_L</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">data_L</span><span class="p">)</span>
+    
+    <span class="c1"># find the approximate number of time series after we split them into small ones</span>
+    <span class="n">app_num_ts</span> <span class="o">=</span> <span class="n">total_L</span><span class="o">//</span><span class="mi">1000</span>
+    
+    <span class="c1"># generate arrays for the split data</span>
+    <span class="n">split_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="n">app_num_ts</span><span class="p">),</span><span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">)</span>
+    <span class="n">split_labels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="n">app_num_ts</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+    <span class="n">inc</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># increment that counts the number of total splits</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+        <span class="n">ts</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    
+        <span class="c1"># splitting </span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">ts</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">1000</span><span class="p">:</span>
+            <span class="n">num_splits</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">ts</span><span class="p">)</span><span class="o">//</span><span class="mi">1000</span>
+            <span class="n">split</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array_split</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span><span class="n">num_splits</span><span class="p">)</span> 
+            
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_splits</span><span class="p">):</span>
+                <span class="n">split_data</span><span class="p">[</span><span class="n">inc</span><span class="p">]</span> <span class="o">=</span> <span class="n">split</span><span class="p">[</span><span class="n">j</span><span class="p">][:,</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+                <span class="n">split_labels</span><span class="p">[</span><span class="n">inc</span><span class="p">]</span> <span class="o">=</span> <span class="n">split</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+                <span class="n">inc</span> <span class="o">=</span> <span class="n">inc</span><span class="o">+</span><span class="mi">1</span>
+    <span class="c1"># remove the empty rows from the split arrays</span>
+    <span class="n">split_data</span> <span class="o">=</span> <span class="n">split_data</span><span class="p">[:</span><span class="n">inc</span><span class="p">]</span>
+    <span class="n">split_labels</span> <span class="o">=</span> <span class="n">split_labels</span><span class="p">[:</span><span class="n">inc</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">split_data</span><span class="p">,</span> <span class="n">split_labels</span></div>
+
+<div class="viewcode-block" id="EEMD_IMF_Compute"><a class="viewcode-back" href="../../EEMD.html#WPT_EEMD_ML.EEMD_Feature_Extraction.EEMD_IMF_Compute">[docs]</a><span class="k">def</span> <span class="nf">EEMD_IMF_Compute</span><span class="p">(</span><span class="n">data_path</span><span class="p">,</span><span class="n">list_name</span><span class="p">,</span> <span class="n">EEMDecs</span><span class="p">,</span> <span class="n">saving</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function takes set of time series and compute their IMFs. If time series</span>
+<span class="sd">    data contains large samples, it uses the preprocessing function to reduce the </span>
+<span class="sd">    computation time. Resulting split time series is used to compute IMFs</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    data_path : str</span>
+<span class="sd">        The path to data files.</span>
+<span class="sd">    list_name : str</span>
+<span class="sd">        The name of the txt file that contains the list of names of time series. </span>
+<span class="sd">    EEMDecs : str</span>
+<span class="sd">        The parameter that defines if the IMFs are precomputed or not. It is set to </span>
+<span class="sd">        &quot;A&quot; if the IMFs for the current data set is available. It is set to &quot;NA&quot;, if IMFs </span>
+<span class="sd">        are not computed yet.</span>
+<span class="sd">    saving : Boolean</span>
+<span class="sd">        If user wants to save the decomposition for the data set, this parameter  is set to </span>
+<span class="sd">        True. </span>
+<span class="sd">    *args : </span>
+<span class="sd">        saving_path: str</span>
+<span class="sd">            The path to save the decomposition. This parameter is only needed when saving is </span>
+<span class="sd">            set to True.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    infoEMF : object array</span>
+<span class="sd">        Object array that includes decomposition for each split time series.</span>
+<span class="sd">    split_labels : ndarray</span>
+<span class="sd">        2D array that includes the labels of the split time series.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># split the data into small chunks to reduce time to compute IMFs</span>
+    <span class="n">split_data</span><span class="p">,</span> <span class="n">split_labels</span> <span class="o">=</span> <span class="n">preprocess_chatter_data</span><span class="p">(</span><span class="n">data_path</span><span class="p">,</span><span class="n">list_name</span><span class="p">)</span>
+ 
+      
+    <span class="c1"># Compute IMFs if they are not computed before</span>
+    <span class="k">if</span> <span class="n">EEMDecs</span><span class="o">==</span><span class="s1">&#39;NA&#39;</span><span class="p">:</span>
+        <span class="c1"># generate the array that stores the decomposition</span>
+        <span class="n">infoEMF</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">split_data</span><span class="p">)),</span><span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">)</span> 
+        
+        <span class="n">eemd</span> <span class="o">=</span> <span class="n">EEMD</span><span class="p">()</span>
+        <span class="n">emd</span> <span class="o">=</span> <span class="n">eemd</span><span class="o">.</span><span class="n">EMD</span>
+        <span class="n">emd</span><span class="o">.</span><span class="n">trials</span> <span class="o">=</span> <span class="mi">200</span>      <span class="c1">#default = 100</span>
+        <span class="n">emd</span><span class="o">.</span><span class="n">noise_width</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="c1">#default = 0.05</span>
+
+        <span class="c1"># Chosen imf for feature extraction</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">split_data</span><span class="p">)):</span> 
+        
+            <span class="c1">#signal</span>
+            <span class="n">S</span> <span class="o">=</span> <span class="n">split_data</span><span class="p">[</span><span class="n">i</span><span class="p">][:,</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">t</span> <span class="o">=</span> <span class="n">split_data</span><span class="p">[</span><span class="n">i</span><span class="p">][:,</span><span class="mi">0</span><span class="p">]</span>
+            
+            <span class="n">eIMFs</span> <span class="o">=</span> <span class="n">emd</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+            <span class="n">infoEMF</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">eIMFs</span>  
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Progress: IMFs were computed for case number </span><span class="si">{}</span><span class="s1">.  &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+    
+        <span class="c1">#save eIMFs into mat file</span>
+        <span class="k">if</span> <span class="n">saving</span><span class="p">:</span>
+            <span class="n">saving_path</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="n">saving_path</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">IMFs_Case_</span><span class="si">%i</span><span class="s1">&#39;</span><span class="o">%</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">infoEMF</span><span class="p">)</span>
+           
+    <span class="k">elif</span> <span class="n">EEMDecs</span><span class="o">==</span><span class="s1">&#39;A&#39;</span><span class="p">:</span>
+        <span class="n">load_path</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">dataname</span> <span class="o">=</span> <span class="n">load_path</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">IMFs.npy&#39;</span>
+        <span class="n">infoEMF</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">dataname</span><span class="p">,</span><span class="n">allow_pickle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            
+    <span class="k">return</span> <span class="n">infoEMF</span><span class="p">,</span><span class="n">split_labels</span></div>
+    
+<div class="viewcode-block" id="EEMD_Feature_Compute"><a class="viewcode-back" href="../../EEMD.html#WPT_EEMD_ML.EEMD_Feature_Extraction.EEMD_Feature_Compute">[docs]</a><span class="k">def</span> <span class="nf">EEMD_Feature_Compute</span><span class="p">(</span><span class="n">infoEMF</span><span class="p">,</span><span class="n">p</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This function computes the features for selected IMF of each time series.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    infoEMF : object array</span>
+<span class="sd">        Object array that includes the IMFs for each time series.</span>
+<span class="sd">    p : int</span>
+<span class="sd">        The informative IMF number.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    features : ndarray</span>
+<span class="sd">        Feature matrix</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">features</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">infoEMF</span><span class="p">),</span><span class="mi">7</span><span class="p">))</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">infoEMF</span><span class="p">)):</span>
+        <span class="n">eIMFs</span> <span class="o">=</span> <span class="n">infoEMF</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="c1">#feature_1</span>
+        <span class="n">nIMFs</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">eIMFs</span><span class="p">)</span>
+        <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">eIMFs</span><span class="p">[</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span><span class="mi">2</span><span class="p">)</span> 
+        <span class="n">A_sum</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>                                   <span class="c1">#summing squares of whole elements of second IMF</span>
+        <span class="n">B_sum</span> <span class="o">=</span> <span class="mi">0</span>               
+        <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nIMFs</span><span class="p">):</span>
+            <span class="n">B_sum</span> <span class="o">=</span> <span class="n">B_sum</span> <span class="o">+</span> <span class="nb">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">eIMFs</span><span class="p">[</span><span class="n">k</span><span class="p">],</span><span class="mi">2</span><span class="p">))</span>   <span class="c1">#computing summing of squares of whole elements of IMFs</span>
+        <span class="n">features</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="n">A_sum</span><span class="o">/</span><span class="n">B_sum</span>                        <span class="c1">#energy ratio feature</span>
+        
+        <span class="c1">#feature_2  Peak to peak value</span>
+        <span class="n">Maximum</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">eIMFs</span><span class="p">[</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">Minimum</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">eIMFs</span><span class="p">[</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">features</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">Maximum</span> <span class="o">-</span> <span class="n">Minimum</span> 
+        <span class="c1">#feature_3 standard deviation</span>
+        <span class="n">features</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">eIMFs</span><span class="p">[</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+        <span class="c1">#feature_4 root mean square (RMS)</span>
+        <span class="n">features</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">eIMFs</span><span class="p">[</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>   
+        <span class="c1">#feature_5 Crest factor</span>
+        <span class="n">features</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="n">Maximum</span><span class="o">/</span><span class="n">features</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+        <span class="c1">#feature_6 Skewness</span>
+        <span class="n">features</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="n">skew</span><span class="p">(</span><span class="n">eIMFs</span><span class="p">[</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+        <span class="c1">#feature_7 Kurtosis</span>
+        <span class="n">L</span><span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">eIMFs</span><span class="p">[</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">features</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">eIMFs</span><span class="p">[</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">eIMFs</span><span class="p">[</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">]),</span><span class="mi">4</span><span class="p">))</span> <span class="o">/</span> <span class="p">((</span><span class="n">L</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">features</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span><span class="mi">4</span><span class="p">))</span>
+    
+    <span class="k">return</span> <span class="n">features</span></div>
+     
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Melih C. Yesilli, Firas A. Khasawneh, Andreas Otto.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-XXXXXXX-1', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

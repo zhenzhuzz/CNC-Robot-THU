@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Projects\\RobotStudio\\ABB_C#\u4E0A\u4F4D\u673A_\u4E3B\u8F74\u8C03\u901F_20250107\\ABBProject\\ABB_12301\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF99470C-5154-402E-8A90-54C149C810B6}|ABB_1230\\ABB_1230.csproj|e:\\projects\\robotstudio\\abb_c#\u4E0A\u4F4D\u673A_\u4E3B\u8F74\u8C03\u901F_20250107\\abbproject\\abb_12301\\abb_1230\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF99470C-5154-402E-8A90-54C149C810B6}|ABB_1230\\ABB_1230.csproj|solutionrelative:abb_1230\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF99470C-5154-402E-8A90-54C149C810B6}|ABB_1230\\ABB_1230.csproj|e:\\projects\\robotstudio\\abb_c#\u4E0A\u4F4D\u673A_\u4E3B\u8F74\u8C03\u901F_20250107\\abbproject\\abb_12301\\abb_1230\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EF99470C-5154-402E-8A90-54C149C810B6}|ABB_1230\\ABB_1230.csproj|solutionrelative:abb_1230\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF99470C-5154-402E-8A90-54C149C810B6}|ABB_1230\\ABB_1230.csproj|e:\\projects\\robotstudio\\abb_c#\u4E0A\u4F4D\u673A_\u4E3B\u8F74\u8C03\u901F_20250107\\abbproject\\abb_12301\\abb_1230\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF99470C-5154-402E-8A90-54C149C810B6}|ABB_1230\\ABB_1230.csproj|solutionrelative:abb_1230\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF99470C-5154-402E-8A90-54C149C810B6}|ABB_1230\\ABB_1230.csproj|e:\\projects\\robotstudio\\abb_c#\u4E0A\u4F4D\u673A_\u4E3B\u8F74\u8C03\u901F_20250107\\abbproject\\abb_12301\\abb_1230\\robottoolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF99470C-5154-402E-8A90-54C149C810B6}|ABB_1230\\ABB_1230.csproj|solutionrelative:abb_1230\\robottoolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\Projects\\RobotStudio\\ABB_C#\u4E0A\u4F4D\u673A_\u4E3B\u8F74\u8C03\u901F_20250107\\ABBProject\\ABB_12301\\ABB_1230\\Form1.cs",
+              "RelativeDocumentMoniker": "ABB_1230\\Form1.cs",
+              "ToolTip": "E:\\Projects\\RobotStudio\\ABB_C#\u4E0A\u4F4D\u673A_\u4E3B\u8F74\u8C03\u901F_20250107\\ABBProject\\ABB_12301\\ABB_1230\\Form1.cs",
+              "RelativeToolTip": "ABB_1230\\Form1.cs",
+              "ViewState": "AgIAAFURAAAAAAAAAAASwGARAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T11:32:44.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "E:\\Projects\\RobotStudio\\ABB_C#\u4E0A\u4F4D\u673A_\u4E3B\u8F74\u8C03\u901F_20250107\\ABBProject\\ABB_12301\\ABB_1230\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "ABB_1230\\Form1.Designer.cs",
+              "ToolTip": "E:\\Projects\\RobotStudio\\ABB_C#\u4E0A\u4F4D\u673A_\u4E3B\u8F74\u8C03\u901F_20250107\\ABBProject\\ABB_12301\\ABB_1230\\Form1.Designer.cs",
+              "RelativeToolTip": "ABB_1230\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T11:31:52.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "E:\\Projects\\RobotStudio\\ABB_C#\u4E0A\u4F4D\u673A_\u4E3B\u8F74\u8C03\u901F_20250107\\ABBProject\\ABB_12301\\ABB_1230\\Form1.cs",
+              "RelativeDocumentMoniker": "ABB_1230\\Form1.cs",
+              "ToolTip": "E:\\Projects\\RobotStudio\\ABB_C#\u4E0A\u4F4D\u673A_\u4E3B\u8F74\u8C03\u901F_20250107\\ABBProject\\ABB_12301\\ABB_1230\\Form1.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "ABB_1230\\Form1.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T11:31:49.467Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RobotToolManager.cs",
+              "DocumentMoniker": "E:\\Projects\\RobotStudio\\ABB_C#\u4E0A\u4F4D\u673A_\u4E3B\u8F74\u8C03\u901F_20250107\\ABBProject\\ABB_12301\\ABB_1230\\RobotToolManager.cs",
+              "RelativeDocumentMoniker": "ABB_1230\\RobotToolManager.cs",
+              "ToolTip": "E:\\Projects\\RobotStudio\\ABB_C#\u4E0A\u4F4D\u673A_\u4E3B\u8F74\u8C03\u901F_20250107\\ABBProject\\ABB_12301\\ABB_1230\\RobotToolManager.cs",
+              "RelativeToolTip": "ABB_1230\\RobotToolManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T11:30:39.592Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

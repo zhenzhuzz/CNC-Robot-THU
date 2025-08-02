@@ -1,0 +1,367 @@
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_1230\obj\Debug\ABB_二次开发1230.ForemstartNew.resources
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_1230\obj\Debug\ABB_1230.Form1.resources
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_1230\obj\Debug\ABB_1230.Properties.Resources.resources
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_1230\obj\Debug\ABB_1230.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_1230\obj\Debug\ABB_1230.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_1230\bin\Debug\ABB_1230.exe.config
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_1230\bin\Debug\ABB_1230.exe
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_1230\bin\Debug\ABB_1230.pdb
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.dll
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_1230\bin\Debug\HslCommunication.dll
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_1230\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.dll
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.Desktop.dll
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.xml
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_1230\bin\Debug\HslCommunication.xml
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_1230\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_1230\obj\Debug\ABB_1230.exe
+C:\Users\Administrator\source\repos\ABB_二次开发1230 - 副本\ABB_1230\obj\Debug\ABB_1230.pdb
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\obj\Debug\ABB_1230.csproj.AssemblyReference.cache
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\obj\Debug\ABB_二次开发1230.ForemstartNew.resources
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\obj\Debug\ABB_1230.Form1.resources
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\obj\Debug\ABB_1230.Properties.Resources.resources
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\obj\Debug\ABB_1230.csproj.GenerateResource.cache
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\obj\Debug\ABB_1230.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\obj\Debug\ABB_1230.exe
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\obj\Debug\ABB_1230.pdb
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\bin\Debug\ABB_1230.exe.config
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\bin\Debug\ABB_1230.exe
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\bin\Debug\ABB_1230.pdb
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.dll
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\bin\Debug\HslCommunication.dll
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.dll
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.Desktop.dll
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.xml
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\bin\Debug\HslCommunication.xml
+C:\Users\Administrator\Pictures\Camera Roll\ABB_1230\ABB_1230\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\bin\Debug\ABB_1230.exe.config
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\bin\Debug\ABB_1230.exe
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\bin\Debug\ABB_1230.pdb
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.dll
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\bin\Debug\HslCommunication.dll
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.dll
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.Desktop.dll
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.xml
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\bin\Debug\HslCommunication.xml
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\obj\Debug\ABB_二次开发1230.ForemstartNew.resources
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\obj\Debug\ABB_1230.Form1.resources
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\obj\Debug\ABB_1230.Properties.Resources.resources
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\obj\Debug\ABB_1230.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\obj\Debug\ABB_1230.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\obj\Debug\ABB_1230.exe
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\obj\Debug\ABB_1230.pdb
+C:\Users\Administrator\source\repos\ABB_1230\ABB_1230\obj\Debug\ABB_1230.csproj.CopyComplete
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\bin\Debug\ABB_1230.exe.config
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\bin\Debug\ABB_1230.exe
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\bin\Debug\ABB_1230.pdb
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.dll
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\bin\Debug\HslCommunication.dll
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\bin\Debug\Newtonsoft.Json.dll
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.dll
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.Desktop.dll
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.xml
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\bin\Debug\HslCommunication.xml
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\bin\Debug\Newtonsoft.Json.xml
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\obj\Debug\ABB_1230.csproj.AssemblyReference.cache
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\obj\Debug\ABB_二次开发1230.ForemstartNew.resources
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\obj\Debug\ABB_1230.Form1.resources
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\obj\Debug\ABB_1230.Properties.Resources.resources
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\obj\Debug\ABB_1230.csproj.GenerateResource.cache
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\obj\Debug\ABB_1230.csproj.CoreCompileInputs.cache
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\obj\Debug\ABB_1230.csproj.CopyComplete
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\obj\Debug\ABB_1230.exe
+C:\Users\desam\Desktop\ABB_1230\ABB_1230\obj\Debug\ABB_1230.pdb
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe.config
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\ABB_1230.pdb
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.dll
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\ClosedXML.dll
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.dll
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\HslCommunication.dll
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.dll
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\System.IO.Packaging.dll
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.dll
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.Desktop.dll
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.xml
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\ClosedXML.pdb
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\ClosedXML.xml
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.xml
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\HslCommunication.xml
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.xml
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\obj\Debug\ABB_二次开发1230.ForemstartNew.resources
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Form1.resources
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Properties.Resources.resources
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.GenerateResource.cache
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.CoreCompileInputs.cache
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.CopyComplete
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\obj\Debug\ABB_1230.exe
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\obj\Debug\ABB_1230.pdb
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\NModbus4.dll
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\bin\Debug\NModbus4.xml
+C:\Users\desam\Desktop\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.AssemblyReference.cache
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\obj\Debug\ABB_二次开发1230.ForemstartNew.resources
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Form1.resources
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Properties.Resources.resources
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.GenerateResource.cache
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe.config
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\ABB_1230.pdb
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.dll
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\ClosedXML.dll
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.dll
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\HslCommunication.dll
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\NModbus4.dll
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\System.IO.Packaging.dll
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.dll
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.Desktop.dll
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.xml
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\ClosedXML.pdb
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\ClosedXML.xml
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.xml
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\HslCommunication.xml
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\bin\Debug\NModbus4.xml
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\obj\Debug\ABB_1230.exe
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\obj\Debug\ABB_1230.pdb
+C:\Users\Administrator\Videos\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.AssemblyReference.cache
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe.config
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\ABB_1230.pdb
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\ClosedXML.dll
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.dll
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.dll
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\HslCommunication.dll
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.dll
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\NModbus4.dll
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\System.IO.Packaging.dll
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.dll
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.Desktop.dll
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.xml
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\ClosedXML.pdb
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\ClosedXML.xml
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.xml
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.xml
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\HslCommunication.xml
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.xml
+D:\ABB\ABB_12301\ABB_1230\bin\Debug\NModbus4.xml
+D:\ABB\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.AssemblyReference.cache
+D:\ABB\ABB_12301\ABB_1230\obj\Debug\ABB_二次开发1230.ForemstartNew.resources
+D:\ABB\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Form1.resources
+D:\ABB\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Properties.Resources.resources
+D:\ABB\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.GenerateResource.cache
+D:\ABB\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.CoreCompileInputs.cache
+D:\ABB\ABB_12301\ABB_1230\obj\Debug\ABB_1230.exe
+D:\ABB\ABB_12301\ABB_1230\obj\Debug\ABB_1230.pdb
+D:\ABB\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.Up2Date
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe.config
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\ABB_1230.pdb
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\ClosedXML.dll
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.dll
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.dll
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\HslCommunication.dll
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.dll
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\NModbus4.dll
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\System.IO.Packaging.dll
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\ClosedXML.pdb
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\ClosedXML.xml
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.xml
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.xml
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\HslCommunication.xml
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.xml
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\NModbus4.xml
+D:\ABB\test\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.AssemblyReference.cache
+D:\ABB\test\ABB_12301\ABB_1230\obj\Debug\ABB_二次开发1230.ForemstartNew.resources
+D:\ABB\test\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Form1.resources
+D:\ABB\test\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Properties.Resources.resources
+D:\ABB\test\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.GenerateResource.cache
+D:\ABB\test\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.CoreCompileInputs.cache
+D:\ABB\test\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.Up2Date
+D:\ABB\test\ABB_12301\ABB_1230\obj\Debug\ABB_1230.exe
+D:\ABB\test\ABB_12301\ABB_1230\obj\Debug\ABB_1230.pdb
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.dll
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.Desktop.dll
+D:\ABB\test\ABB_12301\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.xml
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe.config
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\ABB_1230.pdb
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\ClosedXML.dll
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.dll
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.dll
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\HslCommunication.dll
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.dll
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\NModbus4.dll
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\System.IO.Packaging.dll
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.dll
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.Desktop.dll
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.xml
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\ClosedXML.pdb
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\ClosedXML.xml
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.xml
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.xml
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\HslCommunication.xml
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.xml
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\bin\Debug\NModbus4.xml
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.AssemblyReference.cache
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_二次开发1230.ForemstartNew.resources
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Form1.resources
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Properties.Resources.resources
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.GenerateResource.cache
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.CoreCompileInputs.cache
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.Up2Date
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.exe
+C:\work\Kael\VisualStudioProjects\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.pdb
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe.config
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\ABB_1230.pdb
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\ClosedXML.dll
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.dll
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.dll
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\HslCommunication.dll
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\NModbus4.dll
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\System.IO.Packaging.dll
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.dll
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.Desktop.dll
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.xml
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\ClosedXML.pdb
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\ClosedXML.xml
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.xml
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.xml
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\HslCommunication.xml
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.xml
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\bin\Debug\NModbus4.xml
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.AssemblyReference.cache
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_二次开发1230.ForemstartNew.resources
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Form1.resources
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Properties.Resources.resources
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.GenerateResource.cache
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.CoreCompileInputs.cache
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.Up2Date
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.exe
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250107\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.pdb
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe.config
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\ABB_1230.pdb
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\ClosedXML.dll
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.dll
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.dll
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\HslCommunication.dll
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\NModbus4.dll
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\System.IO.Packaging.dll
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.dll
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.Desktop.dll
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.xml
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\ClosedXML.pdb
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\ClosedXML.xml
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.xml
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.xml
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\HslCommunication.xml
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.xml
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\bin\Debug\NModbus4.xml
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.AssemblyReference.cache
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_二次开发1230.ForemstartNew.resources
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Form1.resources
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Properties.Resources.resources
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.GenerateResource.cache
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.CoreCompileInputs.cache
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.Up2Date
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.exe
+E:\Projects\RobotStudio\ABB_C#上位机_主轴调速_20250113\ABBProject\ABB_12301\ABB_1230\obj\Debug\ABB_1230.pdb
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe.config
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\ABB_1230.pdb
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\ClosedXML.dll
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.dll
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.dll
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\HslCommunication.dll
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.dll
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\NModbus4.dll
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\System.IO.Packaging.dll
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.dll
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.Desktop.dll
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.xml
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\ClosedXML.pdb
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\ClosedXML.xml
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.xml
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.xml
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\HslCommunication.xml
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.xml
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\bin\Debug\NModbus4.xml
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.AssemblyReference.cache
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\obj\Debug\ABB_二次开发1230.ForemstartNew.resources
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Form1.resources
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Properties.Resources.resources
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.GenerateResource.cache
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.CoreCompileInputs.cache
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.Up2Date
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\obj\Debug\ABB_1230.exe
+D:\正在做的项目\微信ID_ZhuZhen\ABB_C#上位机_主轴调速_PLC_TCPIP_20250113\ABB_12301\ABB_1230\obj\Debug\ABB_1230.pdb
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe.config
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\ABB_1230.pdb
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\ClosedXML.dll
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.dll
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.dll
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\HslCommunication.dll
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\NModbus4.dll
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\System.IO.Packaging.dll
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.dll
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.Desktop.dll
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.xml
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\ClosedXML.pdb
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\ClosedXML.xml
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.xml
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.xml
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\HslCommunication.xml
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.xml
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\bin\Debug\NModbus4.xml
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.AssemblyReference.cache
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\obj\Debug\ABB_二次开发1230.ForemstartNew.resources
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Form1.resources
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Properties.Resources.resources
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.GenerateResource.cache
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.CoreCompileInputs.cache
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.Up2Date
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\obj\Debug\ABB_1230.exe
+E:\Projects\RobotStudio\ABB_C#上位机_IP修改_20250114\20250114\ABB_12301\ABB_1230\obj\Debug\ABB_1230.pdb
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe.config
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\ABB_1230.exe
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\ABB_1230.pdb
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\ClosedXML.dll
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.dll
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.dll
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\HslCommunication.dll
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\NModbus4.dll
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\System.IO.Packaging.dll
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.dll
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\RobotStudio.Services.RobApi.Desktop.dll
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\ABB.Robotics.Controllers.PC.xml
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\ClosedXML.pdb
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\ClosedXML.xml
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\DocumentFormat.OpenXml.xml
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\ExcelNumberFormat.xml
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\HslCommunication.xml
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\Newtonsoft.Json.xml
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\bin\Debug\NModbus4.xml
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.AssemblyReference.cache
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\obj\Debug\ABB_二次开发1230.ForemstartNew.resources
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Form1.resources
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\obj\Debug\ABB_1230.Properties.Resources.resources
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.GenerateResource.cache
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.CoreCompileInputs.cache
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\obj\Debug\ABB_1230.csproj.Up2Date
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\obj\Debug\ABB_1230.exe
+E:\Projects\20250113RoboticMillingSystem_云樘_PLC_上位机软件\20250113PLC\ABB_C#上位机_优化卡顿_取消监听_20250318\20250114\ABB_12301\ABB_1230\obj\Debug\ABB_1230.pdb

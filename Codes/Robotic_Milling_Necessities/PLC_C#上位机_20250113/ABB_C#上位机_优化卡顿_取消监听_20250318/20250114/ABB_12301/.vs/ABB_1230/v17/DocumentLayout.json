@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Projects\\20250113RoboticMillingSystem_\u4E91\u6A18_PLC_\u4E0A\u4F4D\u673A\u8F6F\u4EF6\\20250113PLC\\ABB_C#\u4E0A\u4F4D\u673A_\u4F18\u5316\u5361\u987F_\u53D6\u6D88\u76D1\u542C_20250318\\20250114\\ABB_12301\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF99470C-5154-402E-8A90-54C149C810B6}|ABB_1230\\ABB_1230.csproj|e:\\projects\\20250113roboticmillingsystem_\u4E91\u6A18_plc_\u4E0A\u4F4D\u673A\u8F6F\u4EF6\\20250113plc\\abb_c#\u4E0A\u4F4D\u673A_\u4F18\u5316\u5361\u987F_\u53D6\u6D88\u76D1\u542C_20250318\\20250114\\abb_12301\\abb_1230\\robottoolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF99470C-5154-402E-8A90-54C149C810B6}|ABB_1230\\ABB_1230.csproj|solutionrelative:abb_1230\\robottoolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF99470C-5154-402E-8A90-54C149C810B6}|ABB_1230\\ABB_1230.csproj|E:\\Projects\\20250113RoboticMillingSystem_\u4E91\u6A18_PLC_\u4E0A\u4F4D\u673A\u8F6F\u4EF6\\20250113PLC\\ABB_C#\u4E0A\u4F4D\u673A_\u4F18\u5316\u5361\u987F_\u53D6\u6D88\u76D1\u542C_20250318\\20250114\\ABB_12301\\abb_1230\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF99470C-5154-402E-8A90-54C149C810B6}|ABB_1230\\ABB_1230.csproj|solutionrelative:abb_1230\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF99470C-5154-402E-8A90-54C149C810B6}|ABB_1230\\ABB_1230.csproj|E:\\Projects\\20250113RoboticMillingSystem_\u4E91\u6A18_PLC_\u4E0A\u4F4D\u673A\u8F6F\u4EF6\\20250113PLC\\ABB_C#\u4E0A\u4F4D\u673A_\u4F18\u5316\u5361\u987F_\u53D6\u6D88\u76D1\u542C_20250318\\20250114\\ABB_12301\\abb_1230\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EF99470C-5154-402E-8A90-54C149C810B6}|ABB_1230\\ABB_1230.csproj|solutionrelative:abb_1230\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\Projects\\20250113RoboticMillingSystem_\u4E91\u6A18_PLC_\u4E0A\u4F4D\u673A\u8F6F\u4EF6\\20250113PLC\\ABB_C#\u4E0A\u4F4D\u673A_\u4F18\u5316\u5361\u987F_\u53D6\u6D88\u76D1\u542C_20250318\\20250114\\ABB_12301\\ABB_1230\\Form1.cs",
+              "RelativeDocumentMoniker": "ABB_1230\\Form1.cs",
+              "ToolTip": "E:\\Projects\\20250113RoboticMillingSystem_\u4E91\u6A18_PLC_\u4E0A\u4F4D\u673A\u8F6F\u4EF6\\20250113PLC\\ABB_C#\u4E0A\u4F4D\u673A_\u4F18\u5316\u5361\u987F_\u53D6\u6D88\u76D1\u542C_20250318\\20250114\\ABB_12301\\ABB_1230\\Form1.cs",
+              "RelativeToolTip": "ABB_1230\\Form1.cs",
+              "ViewState": "AgIAAHYXAAAAAAAAAAAnwIMXAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T11:09:22.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\Projects\\20250113RoboticMillingSystem_\u4E91\u6A18_PLC_\u4E0A\u4F4D\u673A\u8F6F\u4EF6\\20250113PLC\\ABB_C#\u4E0A\u4F4D\u673A_\u4F18\u5316\u5361\u987F_\u53D6\u6D88\u76D1\u542C_20250318\\20250114\\ABB_12301\\ABB_1230\\Form1.cs",
+              "RelativeDocumentMoniker": "ABB_1230\\Form1.cs",
+              "ToolTip": "E:\\Projects\\20250113RoboticMillingSystem_\u4E91\u6A18_PLC_\u4E0A\u4F4D\u673A\u8F6F\u4EF6\\20250113PLC\\ABB_C#\u4E0A\u4F4D\u673A_\u4F18\u5316\u5361\u987F_\u53D6\u6D88\u76D1\u542C_20250318\\20250114\\ABB_12301\\ABB_1230\\Form1.cs [Design]",
+              "RelativeToolTip": "ABB_1230\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T11:09:19.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RobotToolManager.cs",
+              "DocumentMoniker": "E:\\Projects\\20250113RoboticMillingSystem_\u4E91\u6A18_PLC_\u4E0A\u4F4D\u673A\u8F6F\u4EF6\\20250113PLC\\ABB_C#\u4E0A\u4F4D\u673A_\u4F18\u5316\u5361\u987F_\u53D6\u6D88\u76D1\u542C_20250318\\20250114\\ABB_12301\\ABB_1230\\RobotToolManager.cs",
+              "RelativeDocumentMoniker": "ABB_1230\\RobotToolManager.cs",
+              "ToolTip": "E:\\Projects\\20250113RoboticMillingSystem_\u4E91\u6A18_PLC_\u4E0A\u4F4D\u673A\u8F6F\u4EF6\\20250113PLC\\ABB_C#\u4E0A\u4F4D\u673A_\u4F18\u5316\u5361\u987F_\u53D6\u6D88\u76D1\u542C_20250318\\20250114\\ABB_12301\\ABB_1230\\RobotToolManager.cs",
+              "RelativeToolTip": "ABB_1230\\RobotToolManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T07:08:41.319Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

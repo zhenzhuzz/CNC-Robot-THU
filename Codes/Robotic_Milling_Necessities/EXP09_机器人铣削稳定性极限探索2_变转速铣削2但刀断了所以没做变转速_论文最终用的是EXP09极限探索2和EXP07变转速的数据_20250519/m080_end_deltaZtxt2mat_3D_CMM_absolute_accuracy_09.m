@@ -1,0 +1,51 @@
+%% 清理环境 / Clear workspace and close figures
+clear; clc; close all;
+
+%% 参数设置 / Parameters
+spindleSpeeds    = 3000:1000:10000;   % 主轴转速列表 / list of spindle speeds (RPM)
+dataFolder       = 'cmm_09';          % 数据文件夹 / folder containing data files
+subplotGap       = [0, 0.14];         % tight_subplot 的子图间距 / [vertical, horizontal] gap
+marginVertical   = [0, 0];            % 上下边距 / [bottom, top] margins
+marginHorizontal = [0.09, 0.04];      % 左右边距 / [left, right] margins
+colorBarMin      = 0;                 % 颜色条最小值 / colorbar min
+colorBarMax      = 0.3;               % 颜色条最大值 / colorbar max
+
+%% 读取并重塑 Z 方向切深误差到结构体 ZerrorBySpeed
+% / Read & reshape Z-direction delta ap errors into struct
+ZerrorBySpeed = struct();           % 初始化结构体 / initialize struct
+
+for idx = 1:numel(spindleSpeeds)
+    speed        = spindleSpeeds(idx);                   % 当前主轴转速 / current speed
+    fileName     = sprintf('%d_end.txt', speed);         % 文件名 / data file name
+    filePath     = fullfile(dataFolder, fileName);       % 完整路径 / full file path
+    
+    fileID       = fopen(filePath, 'r');                 % 打开文件 / open file for reading
+    if fileID < 0
+        error('Cannot open file: %s', filePath);         % 打开失败报错 / error if fail
+    end
+
+    zDeltaErrors = [];                                    % 存放 Z 方向切深误差 / vector for Z-direction delta ap errors
+    while ~feof(fileID)
+        currentLine = fgetl(fileID);                      % 读取一行 / read one line
+        if ischar(currentLine) && startsWith(strtrim(currentLine), 'PT')
+            % 在当前 PT 块内寻找以 'Z' 开头的行 / search this PT block for 'Z'
+            for k = 1:15                                  % 假设每块不超过 15 行 / assume ≤15 lines per PT block
+                subLine = fgetl(fileID);
+                if ~ischar(subLine), break; end
+                if startsWith(strtrim(subLine), 'Z')
+                    parts = strsplit(strtrim(subLine));  
+                    zDeltaErrors(end+1) = str2double(parts{4});  
+                    break;                                  % 找到后退出内层循环 / break inner loop
+                end
+            end
+        end
+    end
+    fclose(fileID);                                        % 关闭文件 / close file
+
+    % 重塑为 10×30 矩阵 / reshape into 10×30 matrix
+    % （先 30×10，再转置）/ reshape 1×300 → 30×10 then transpose
+    zDeltaMatrix = reshape(zDeltaErrors, 30, 10)';        
+
+    % 存入结构体字段，字段名如 speed3000, speed4000, … 
+    ZerrorBySpeed.(sprintf('n%d', speed)) = zDeltaMatrix;
+end
