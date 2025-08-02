@@ -1,8 +1,15 @@
 # CNC-Robot-THU
 Robotic Machining System @Tsinghua: Custom ABB IRB6700 (2.6m reach, 200kg load, avg. 0.29mm accuracy), high-speed spindle, Siemens PLC, RealSense depth camera, CHOTEST auto-probing, vision-based tool setting. Developing AI-powered CAM, C++ ROS integration, and KUKA KR-60 collaboration.
 
+✨ 项目简介
+------
+清华大学深圳国际研究生院 LIMES 实验室机器人加工系统 | Robotic Machining System from Tsinghua SIGS LIMES  
 
-清华大学深圳国际研究生院LIMES实验室机器人加工系统 | Robotic Machining System from Tsinghua SIGS LIMES
+本项目围绕**机器人加工系统**的搭建与控制展开，基于ABB IRB6700机器人（2.6m臂展，200kg负载，平均绝对精度0.29 mm），集成西门子PLC、高速电主轴、RealSense视觉系统、CHOTEST自动测量探头，并融合了ROS生态、视觉识别、加工颤振在线监测与自适应变主轴转速抑制技术。
+
+
+* * *
+
 
 > 📌 **机器人加工系统功能演示**：
 
@@ -16,18 +23,7 @@ Robotic Machining System @Tsinghua: Custom ABB IRB6700 (2.6m reach, 200kg load, 
 
 * * *
 
-✨ 项目简介
-------
 
-本项目围绕**机器人加工系统**的搭建与控制展开，基于ABB IRB6700机器人（2.6m臂展，200kg负载），集成西门子PLC、Realsense视觉系统、CHOTEST自动测量探头，并融合了ROS生态、视觉识别、加工颤振监测与抑制技术。
-
-* * *
-
-**ChatGPT:**
-
-以下是根据你的需求更新的仓库结构说明部分，已包含重要文件的链接、关键注释和预留图片位置：
-
-* * *
 
 🚩 仓库结构说明
 ---------
@@ -62,7 +58,7 @@ ROS与视觉系统相关程序（由吴珩管理）。
 
 ### 📂 [`Docs/`](Docs/)
 
-* **[机器人加工系统颤振监测与抑制技术研究（硕士学位论文）](Docs/11_毕业论文pdf_2022214656-朱镇-机器人加工系统颤振监测与抑制技术研究_20250517.pdf)**  
+* **[机器人加工系统颤振监测与抑制技术研究（朱镇硕士学位论文）](Docs/11_毕业论文pdf_2022214656-朱镇-机器人加工系统颤振监测与抑制技术研究_20250517.pdf)**  
 工业机器人刚度不足导致铣削易发生颤振，影响加工质量与稳定性。本文建立机器人铣削的动力学模型，通过稳定性叶瓣图指导颤振监测与抑制策略设计；研发了基于FFT频谱分析和频域陷波滤波的颤振实时监测方法，并提出自适应变主轴转速主动抑制策略。实验表明颤振检测延迟低于100 ms，主动抑制策略150 ms内生效，有效降低振幅超过80%，显著提升加工稳定性和零件质量。  
 实验结果表明，该方法将加工效率提升超过30%，工件表面质量提高约60%，刀具寿命显著延长。
 
@@ -74,44 +70,17 @@ ROS与视觉系统相关程序（由吴珩管理）。
 
 
 
-
 * * *
 
-🚨 使用注意
--------
-
-PLC控制程序为供应商工程师编写，请勿擅自修改，否则易致设备运行异常。如有需求，请与PLC开发工程师联系。
-
-* * *
-
-📌 推荐访问顺序
----------
-
-依次建议：
-
-1. 浏览`搭建经历ppt`了解项目整体脉络；
-   
-2. 参阅`毕业论文pdf`深入理解研究背景、理论与方法；
-   
-3. 查看`Figures`与`Videos`直观感受系统实操过程；
-   
-4. 根据需求查阅[`Code`](Code/)内的实验代码。
-   
-
-* * *
 
 🛠️ 核心技术亮点
 ----------
 
-* **机器人视觉辅助**：RealSense相机自动识别初始工件位置；
-  
-* **自动标定系统**：CHOTEST探头自动建系与视觉对刀；
-  
-* **先进加工技术**：颤振监测与主动抑制技术（论文内详述）；
-  
-* **生态融合**：基于C++开发ROS接口，融入ROS生态；
-  
-* **前沿探索**：未来AI驱动的CAM加工路径规划与特征识别（开发中）。
+- **机器人视觉辅助**：RealSense视觉系统自动识别工件位置；
+- **自动标定系统**：CHOTEST探头自动建系与视觉对刀；
+- **颤振在线监测与主动抑制**：基于FFT频谱分析的实时监测及变主轴转速自适应控制；
+- **ROS生态融合**：基于C++开发ROS接口；
+- **前沿探索**：AI驱动的CAM路径规划与加工特征识别（开发中）。
   
 
 * * *
@@ -119,5 +88,5 @@ PLC控制程序为供应商工程师编写，请勿擅自修改，否则易致�
 🚀 项目维护者
 --------
 
-[朱镇（Zhen Zhu）](https://zhenzhuzz.github.io), 吴珩（Heng Wu）
-Tsinghua University
+[朱镇 (Zhen Zhu)](https://zhenzhuzz.github.io), 吴珩 (Heng Wu)
+[清华大学 深圳国际研究生院 LIMES 实验室](http://www.thume.impmlab.com/)
