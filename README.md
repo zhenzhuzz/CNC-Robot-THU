@@ -102,5 +102,5 @@ PLC控制程序为供应商工程师编写，请勿擅自修改，否则易致�
 🚀 项目维护者
 --------
 
-[朱镇（Zhen Zhu）](zhenzhuzz.github.io), 吴恒（Heng Wu）
+[朱镇（Zhen Zhu）](zhenzhuzz.github.io), 吴珩（Heng Wu）
 Tsinghua University
