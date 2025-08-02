@@ -4,13 +4,14 @@ Robotic Machining System @Tsinghua: Custom ABB IRB6700 (2.6m reach, 200kg load, 
 
 清华大学LIMES实验室机器人加工系统 | Robotic Machining System @Tsinghua
 
-> 📌 **项目演示视频（推荐）**：
-> 
-> 在此插入视频或GIF动图吸引眼球  
-> （例如，上传`robot_machining_demo.mp4`后，在README中插入以下HTML代码）:
-> ![Robotic Milling Demo](Media/robotic_milling_demo.gif)
-> 📌 **Robotic milling system construction (Click to Watch Video)**  
-> [▶️ Watch Full Resolution Video](https://drive.google.com/file/d/1IW6d7zLTxaNsqKViqW-QUM10UKJw6B21/view)
+> 📌 **机器人加工系统功能演示**：
+
+<!-- 直接在README页面内展示的GIF动图 -->
+![Robotic Milling System Demo](Media/vd12_机器人加工系统功能展示_20250516.gif)
+
+<!-- 外部链接，用户点击可跳转观看完整分辨率视频 -->
+[🎬 Full Resolution Video](https://drive.google.com/file/d/1IW6d7zLTxaNsqKViqW-QUM10UKJw6B21/view)
+
 
 
 > 
