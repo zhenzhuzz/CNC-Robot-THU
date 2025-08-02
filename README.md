@@ -7,7 +7,7 @@ Robotic Machining System @Tsinghua: Custom ABB IRB6700 (2.6m reach, 200kg load, 
 > 📌 **机器人加工系统功能演示**：
 
 <!-- 直接在README页面内展示的GIF动图 -->
-![Robotic Milling System Demo](Media/vd12_机器人加工系统功能展示_20250516.gif)
+![Robotic Milling System Demo](Media/gif11_机器人加工系统功能展示_20250516.gif)
 
 <!-- 外部链接，用户点击可跳转观看完整分辨率视频 -->
 [🎬 Full Resolution Video](https://drive.google.com/file/d/1IW6d7zLTxaNsqKViqW-QUM10UKJw6B21/view)
