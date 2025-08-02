@@ -11,7 +11,7 @@ Robotic Machining System @Tsinghua: Custom ABB IRB6700 (2.6m reach, 200kg load, 
 > 
 > ```html
 > <video width="600" controls>
->   <source src="Videos/robot_machining_demo.mp4" type="video/mp4">
+>   <source src="Media/vd11_机器人加工系统功能展示_20250516.mp4" type="video/mp4">
 >   您的浏览器不支持视频播放，请下载后观看。
 > </video>
 > ```
@@ -73,13 +73,13 @@ PLC控制程序为供应商工程师编写，请勿擅自修改，否则易致�
 依次建议：
 
 1. 浏览`搭建经历ppt`了解项目整体脉络；
-    
+   
 2. 参阅`毕业论文pdf`深入理解研究背景、理论与方法；
-    
+   
 3. 查看`Figures`与`Videos`直观感受系统实操过程；
-    
+   
 4. 根据需求查阅[`Code`](Code/)内的实验代码。
-    
+   
 
 * * *
 
@@ -87,15 +87,15 @@ PLC控制程序为供应商工程师编写，请勿擅自修改，否则易致�
 ----------
 
 * **机器人视觉辅助**：RealSense相机自动识别初始工件位置；
-    
+  
 * **自动标定系统**：CHOTEST探头自动建系与视觉对刀；
-    
+  
 * **先进加工技术**：颤振监测与主动抑制技术（论文内详述）；
-    
+  
 * **生态融合**：基于C++开发ROS接口，融入ROS生态；
-    
+  
 * **前沿探索**：未来AI驱动的CAM加工路径规划与特征识别（开发中）。
-    
+  
 
 * * *
 
