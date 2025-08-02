@@ -43,7 +43,9 @@ Robotic Machining System @Tsinghua: Custom ABB IRB6700 (2.6m reach, 200kg load, 
 > 经测试发现加入ABB PC SDK其他功能（如读写变量、编程等）后界面存在明显卡顿，推测为ABB SDK本身性能瓶颈所致，建议编程、变量修改等复杂任务在RobotStudio内完成。
 
 <!-- 软件运行颤振时截图（软件界面） -->
-![基于MATLAB的机器人上位机控制界面](Media/基于MATLAB的机器人上位机控制界面.png)
+<img src="Media/基于MATLAB的机器人上位机控制界面.png" width="700" alt="机器人上位机控制界面">
+
+<!--![基于MATLAB的机器人上位机控制界面](Media/基于MATLAB的机器人上位机控制界面.png) -->
 
 其他文件夹（如`EXP01`~`EXP09`及`EXPpre`系列）为机器人铣削实验及数据分析代码，非机器人加工方向研究者可忽略。
 
@@ -88,5 +90,6 @@ ROS与视觉系统相关程序（由吴珩管理）。
 🚀 项目维护者
 --------
 
-[朱镇 (Zhen Zhu)](https://zhenzhuzz.github.io), 吴珩 (Heng Wu)
+[朱镇 (Zhen Zhu)](https://zhenzhuzz.github.io), 吴珩 (Heng Wu)  <br>
 [清华大学 深圳国际研究生院 LIMES 实验室](http://www.thume.impmlab.com/)
+
