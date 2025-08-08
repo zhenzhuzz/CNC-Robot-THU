@@ -23,7 +23,6 @@ Robotic Machining System @Tsinghua: Custom ABB IRB6700 (2.6m reach, 200kg load, 
 
 * * *
 
----
 
 ## 📜 过去回顾 | Past
 
@@ -78,7 +77,7 @@ Robotic Machining System @Tsinghua: Custom ABB IRB6700 (2.6m reach, 200kg load, 
   <img src="Media/CNCBotPortrait13_控制柜线缆走线.jpg" height="300">
   <img src="Media/CNCBotPortrait20_气路系统.jpg" height="300">
 </div>
-<p align="center">▲ 控制柜内部布线与气路系统</p>
+<p align="center">▲ 控制柜与机器人走线与气路系统</p>
 
 <div align="center">
   <img src="Media/CNCBotPortrait21_气路系统背面.jpg" height="300">
