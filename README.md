@@ -60,7 +60,7 @@ Robotic Machining System @Tsinghua: Custom ABB IRB6700 (2.6m reach, 200kg load, 
   <img src="Media/CNCBotPortrait30_KUKA_KR60正面.jpg" height="300">
   <img src="Media/CNCBotPortrait31_KUKA_KR60侧面.jpg" height="300">
 </div>
-<p align="center">▲ KUKA KR-60 协作机器人</p>
+<p align="center">▲ KUKA KR-60 机器人</p>
 
 ---
 
