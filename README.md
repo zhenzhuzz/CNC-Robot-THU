@@ -28,15 +28,15 @@ Robotic Machining System @Tsinghua: Custom ABB IRB6700 (2.6m reach, 200kg load, 
 ## 📜 过去回顾 | Past
 
 <div align="center">
-  <img src="Media/PastCNCBot01_机器人吊装进场_202202.jpg" width="32%">
-  <img src="Media/PastCNCBot02_旧址_202310.jpg" width="32%">
-  <img src="Media/PastCNCBot03_场地搬迁_202310.jpg" width="32%">
+  <img src="Media/PastCNCBot01_机器人吊装进场_202202.jpg" height="300">
+  <img src="Media/PastCNCBot02_旧址_202310.jpg" height="300">
+  <img src="Media/PastCNCBot03_场地搬迁_202310.jpg" height="300">
 </div>
 <p align="center">▲ 2022~2023：机器人进场、旧址作业、场地搬迁</p>
 
 <div align="center">
-  <img src="Media/PastCNCBot04_工作台搬迁.jpg" width="48%">
-  <img src="Media/PastCNCBot05_新址.jpg" width="48%">
+  <img src="Media/PastCNCBot04_工作台搬迁.jpg" height="300">
+  <img src="Media/PastCNCBot05_新址.jpg" height="300">
 </div>
 <p align="center">▲ 工作台搬迁与新址落成</p>
 
@@ -45,21 +45,21 @@ Robotic Machining System @Tsinghua: Custom ABB IRB6700 (2.6m reach, 200kg load, 
 ## 🚀 现状展示 | Present
 
 <div align="center">
-  <img src="Media/CNCBotPortrait01_正面全家福.jpg" width="32%">
-  <img src="Media/CNCBotPortrait02_加工区域.jpg" width="32%">
-  <img src="Media/CNCBotPortrait03_加工时近景.jpg" width="32%">
+  <img src="Media/CNCBotPortrait01_正面全家福.jpg" height="300">
+  <img src="Media/CNCBotPortrait02_加工区域.jpg" height="300">
+  <img src="Media/CNCBotPortrait03_加工时近景.jpg" height="300">
 </div>
 <p align="center">▲ ABB IRB6700 机器人加工系统：正面、加工区、加工近景</p>
 
 <div align="center">
-  <img src="Media/CNCBotPortrait04_高空俯瞰图.jpg" width="48%">
-  <img src="Media/CNCBotPortrait05_后视图.jpg" width="48%">
+  <img src="Media/CNCBotPortrait04_高空俯瞰图.jpg" height="300">
+  <img src="Media/CNCBotPortrait05_后视图.jpg" height="300">
 </div>
 <p align="center">▲ 高空俯瞰与后视图</p>
 
 <div align="center">
-  <img src="Media/CNCBotPortrait30_KUKA_KR60正面.jpg" width="48%">
-  <img src="Media/CNCBotPortrait31_KUKA_KR60侧面.jpg" width="48%">
+  <img src="Media/CNCBotPortrait30_KUKA_KR60正面.jpg" height="300">
+  <img src="Media/CNCBotPortrait31_KUKA_KR60侧面.jpg" height="300">
 </div>
 <p align="center">▲ KUKA KR-60 协作机器人</p>
 
@@ -68,21 +68,21 @@ Robotic Machining System @Tsinghua: Custom ABB IRB6700 (2.6m reach, 200kg load, 
 ## 🔍 细节特写 | Details
 
 <div align="center">
-  <img src="Media/CNCBotPortrait10_控制柜.jpg" width="32%">
-  <img src="Media/CNCBotPortrait11_PLC.jpg" width="32%">
-  <img src="Media/CNCBotPortrait12_变频器.jpg" width="32%">
+  <img src="Media/CNCBotPortrait10_控制柜.jpg" height="300">
+  <img src="Media/CNCBotPortrait11_PLC.jpg" height="300">
+  <img src="Media/CNCBotPortrait12_变频器.jpg" height="300">
 </div>
 <p align="center">▲ 控制柜、PLC 与变频器</p>
 
 <div align="center">
-  <img src="Media/CNCBotPortrait13_控制柜线缆走线.jpg" width="48%">
-  <img src="Media/CNCBotPortrait20_气路系统.jpg" width="48%">
+  <img src="Media/CNCBotPortrait13_控制柜线缆走线.jpg" height="300">
+  <img src="Media/CNCBotPortrait20_气路系统.jpg" height="300">
 </div>
 <p align="center">▲ 控制柜内部布线与气路系统</p>
 
 <div align="center">
-  <img src="Media/CNCBotPortrait21_气路系统背面.jpg" width="48%">
-  <img src="Media/CNCBotPortrait40_ap12mm铝合金槽铣效果.jpg" width="48%">
+  <img src="Media/CNCBotPortrait21_气路系统背面.jpg" height="300">
+  <img src="Media/CNCBotPortrait40_ap12mm铝合金槽铣效果.jpg" height="300">
 </div>
 <p align="center">▲ 气路背面与铝合金槽铣效果</p>
 
