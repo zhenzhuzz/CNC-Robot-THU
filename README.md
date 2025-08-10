@@ -23,7 +23,7 @@ Robotic Machining System @Tsinghua: Custom ABB IRB6700 (2.6m reach, 200kg load, 
 
 * * *
 
----
+
 
 ## 📜 过去回顾 | Past
 
