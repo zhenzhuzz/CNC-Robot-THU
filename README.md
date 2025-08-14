@@ -70,22 +70,39 @@ Robotic Machining System @Tsinghua: Custom ABB IRB6700 (2.6m reach, 200kg load, 
   <img src="Media/CNCBotPortrait10_控制柜.jpg" height="300">
   <img src="Media/CNCBotPortrait11_PLC.jpg" height="300">
   <img src="Media/CNCBotPortrait12_变频器.jpg" height="300">
-</div>
-<p align="center">▲ 控制柜、PLC 与变频器</p>
-
-<div align="center">
   <img src="Media/CNCBotPortrait13_控制柜线缆走线.jpg" height="300">
-  <img src="Media/CNCBotPortrait20_气路系统.jpg" height="300">
 </div>
-<p align="center">▲ 控制柜与机器人走线与气路系统</p>
+<p align="center">▲ 控制柜、PLC、变频器与线缆走线</p>
 
 <div align="center">
+  <img src="Media/CNCBotPortrait20_气路系统.jpg" height="300">
   <img src="Media/CNCBotPortrait21_气路系统背面.jpg" height="300">
-  <img src="Media/CNCBotPortrait40_ap12mm铝合金槽铣效果.jpg" height="300">
 </div>
-<p align="center">▲ 气路背面与铝合金槽铣效果</p>
+<p align="center">▲ 气路系统与背面视图</p>
+
+<div align="center">
+  <img src="Media/CNCBotPortrait40_ap12mm铝合金槽铣效果.jpg" height="300">
+  <img src="Media/CNCBotPortrait41_8mm铝合金侧铣抓拍.jpg" height="300">
+</div>
+<p align="center">▲ 铝合金槽铣与侧铣过程抓拍</p>
 
 ---
+
+## 📊 模态分析 | Modal Analysis
+
+在建立铣削颤振动力学模型前，需要通过**模态分析（Modal Analysis）**获取主轴–刀具–工件系统的固有频率、阻尼比和模态振型等参数。常用方法是**力锤激振实验（Impact Hammer Test）**，利用加速度传感器与力锤敲击记录系统冲击响应，从而计算频响函数（FRF）。
+
+<div align="center">
+  <img src="Media/西门子lms_力锤激振实验.jpg" height="300">
+  <img src="Media/西门子lms_力锤激振实验_近景.jpg" height="300">
+</div>
+<p align="center">▲ 模态分析与力锤激振实验（Siemens LMS 系统）</p>
+
+实验结果可为后续**再生效应时滞微分方程**中的刚度、阻尼等参数提供精确输入，也能帮助验证数值模型的可靠性。通过对 FRF 曲线的分析，可以识别出主导振动模态，并结合稳定性叶瓣图预测切削过程中容易发生颤振的转速区间。
+具体可参考仓库：[Milling-Chatter-Modeling](https://github.com/zhenzhuzz/Milling-Chatter-Modeling)
+
+---
+
 
 
 
