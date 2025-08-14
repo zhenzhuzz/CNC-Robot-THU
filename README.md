@@ -45,10 +45,14 @@ Robotic Machining System @Tsinghua: Custom ABB IRB6700 (2.6m reach, 200kg load, 
 
 <div align="center">
   <img src="Media/CNCBotPortrait01_正面全家福.jpg" height="300">
+</div>
+<p align="center">▲ ABB IRB6700 机器人加工系统正面全家福</p>
+
+<div align="center">
   <img src="Media/CNCBotPortrait02_加工区域.jpg" height="300">
   <img src="Media/CNCBotPortrait03_加工时近景.jpg" height="300">
 </div>
-<p align="center">▲ ABB IRB6700 机器人加工系统：正面、加工区、加工近景</p>
+<p align="center">▲ 加工区域与加工过程近景</p>
 
 <div align="center">
   <img src="Media/CNCBotPortrait04_高空俯瞰图.jpg" height="300">
